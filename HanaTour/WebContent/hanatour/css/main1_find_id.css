@@ -1,0 +1,537 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+
+    line-height: 1;
+    letter-spacing: -.4px;
+
+    overflow-x: hidden;
+
+    background: #f4f5f9;
+}
+
+
+.main1_find_id {
+    width: 100%;
+}
+
+.main1_find_id_inner {
+    margin: 0 auto;
+
+    width: 768px;
+    height: 919px;
+    background-color: white;
+    padding: 15px 26px 0px 26px;
+}
+
+
+.main1_find_id_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1_find_id_header > div:nth-child(1) {
+    display: flex;
+}
+
+
+.main1_find_id_header > div:nth-child(1) > div:nth-child(1) {
+    cursor: pointer;
+    display: block;
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_back_24.png);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 3px;
+}
+
+.main1_find_id_header > div:nth-child(1) > div:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -3px;
+    text-align: left;
+    -webkit-line-clamp: 1;
+    line-height: 1.6;
+    margin-left: 7px;
+}
+
+.main1_find_id_header > div:nth-child(2) {
+    cursor: pointer;
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_home_24.png);
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.main1_find_id_tab {
+    margin-top: 10px;
+}
+
+.main1_find_id_tab_select { 
+    display: flex;
+}
+
+
+.main1_find_id_tab_select > .main1_find_id_tab_active {
+    color: #111;
+    border-bottom: 2px solid black;
+}
+
+.main1_find_id_tab_select > div {
+    cursor: pointer;
+    width: 384px;
+    height: 52px;
+    text-align: center;
+    color: #999;
+    font-weight: 600;
+    border-bottom: 1px solid #999;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+
+
+
+
+
+.main1_find_id3_inner3 {
+    margin-top: 82px;
+}
+
+
+.main1_find_id3_inner3_title {
+    color: #111;
+    font-size: 13px;
+    line-height: 1.46;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+
+
+.main1_find_id3_inner3 > div:nth-child(2) { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1_find_id3_inner3_name {
+    position: relative;
+}
+
+.main1_find_id3_inner3_name.main1_find_id3_inner3_name_fail > input{
+    /* border-color: #e32d1b; */
+    border: 1px solid #e32d1b;
+}
+
+
+.main1_find_id3_inner3_name > input {
+    width: 612px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 4px;
+    padding-left: 14px;
+}
+
+.main1_find_id3_inner3_name > input::placeholder {
+    color: #999;
+    letter-spacing: -2px;
+}
+
+
+/* 이름 체크 */
+.main1_find_id3_inner3_name_pass > div:nth-child(2) {
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_success_48x48.png) no-repeat right 1.6rem center / 1.2rem;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 101;
+    top: 0%;
+    right: -2%;
+}
+
+
+
+.main1_find_id3_inner3_gender {
+    width: 94px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1_find_id3_inner3_gender > div {
+    cursor: pointer;
+    color: rgba(17, 17, 17, .3);
+    border: 1px solid #ddd;
+    width: 47px;
+    height: 48px;
+    padding: 15px 15px;
+    margin-top: 5px;
+}
+
+.main1_find_id3_inner3_gender > div:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.main1_find_id3_inner3_gender > div:nth-child(2) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.main1_find_id3_inner3_gender > .main1_find_id3_inner3_gender_active {
+    border: 1px solid #111;
+    color: #111;
+}
+
+.main1_find_id3_inner3_gender > div > input {
+    display: none;
+}
+
+
+.main1_find_id3_inner3_name_gender_validation > div {
+    line-height: 1.36;
+    font-size: 10px;
+    letter-spacing: -1px;
+    color: #e32d1b;
+    /* margin-bottom: 11px; */
+}
+
+.main1_find_id3_inner3_name_validation {
+    float: left;
+}
+
+.main1_find_id3_inner3_name_validation1 {
+    display: none;
+}
+
+.main1_find_id3_inner3_name_validation2 {
+    display: none;
+}
+
+
+.main1_find_id3_inner3_gender_validation {
+    float: right;
+    display: none;
+}
+
+
+
+
+
+
+
+.main1_find_id3_inner3_birth {
+    margin-top: 12px;
+    position: relative;
+}
+
+
+.main1_find_id3_inner3_birth_fail > div:nth-child(1) > input[name='find_id_birth'] {
+    border-color: #e32d1b;
+}
+
+
+
+.main1_find_id3_inner3_birth > div:nth-child(1) > input { 
+    width: 716px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 4px;
+    padding-left: 14px;
+}
+
+.main1_find_id3_inner3_birth > div:nth-child(1) > input::placeholder {
+    color: #999;
+    letter-spacing: -2px;
+}
+
+
+/* 생년월일 체크 */
+.main1_find_id3_inner3_birth_pass > div:nth-child(1) > div:nth-child(2) {
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_success_48x48.png) no-repeat right 1.6rem center / 1.2rem;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 101;
+    top: 0%;
+    right: 12%;
+}
+
+
+
+.main1_find_id3_inner3_birth > div:nth-child(2) {
+    width: 90px;
+    position: absolute;
+    top: 23%;
+    right: 0.5%;
+}
+
+.main1_find_id3_inner3_birth > div:nth-child(2) > button {
+    cursor: pointer;
+    font-size: 0.7rem;
+    color: #111;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    border: none;
+    background: #e5e5e5;
+    border-radius: .4rem;
+    padding: .4rem .6rem;
+    font-weight: 600;
+    z-index: 101;
+}
+
+
+.main1_find_id3_inner3_birth_validation1 {
+    display: none;
+    line-height: 1.36;
+    font-size: 10px;
+    letter-spacing: -1px;
+    color: #e32d1b;
+    margin-bottom: 12px;
+}
+
+.main1_find_id3_inner3_birth_validation2 {
+    display: none;
+    line-height: 1.36;
+    font-size: 10px;
+    letter-spacing: -1px;
+    color: #e32d1b;
+    margin-bottom: 12px;
+}
+
+
+.main1_find_id3_inner3_mail {
+    margin-top: 12px;
+    position: relative;
+}
+
+
+
+.main1_find_id3_inner3_mail > div:nth-child(1) > input {
+
+    width: 716px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 4px;
+    padding-left: 14px;
+}
+.main1_find_id3_inner3_mail > div:nth-child(1) > input:disabled {
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+    color: rgba(1, 1, 1, 0.3);
+}
+
+.main1_find_id3_inner3_mail > div:nth-child(1) > input::placeholder {
+    color: #999;
+    letter-spacing: -2px;
+}
+
+
+.main1_find_id3_inner3_mail > div:nth-child(2) {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+}
+
+
+.main1_find_id3_inner3_mail_btn  {
+    cursor: pointer;
+    font-size: 0.7rem;
+    color: #111;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    border: none;
+    background: #e5e5e5;
+    border-radius: .4rem;
+    padding: .4rem .6rem;
+    font-weight: 600;
+    z-index: 101;
+}
+
+.main1_find_id3_inner3_mail_btn:disabled { 
+    background: hsla(0, 0%, 89.8%, .5);
+    color: rgba(1, 1, 1, .4);
+}
+
+/* 이메일 체크 */
+.main1_find_id3_inner3_mail_pass > .main1_find_id3_inner3_mail_img {
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_success_48x48.png) no-repeat right 1.6rem center / 1.2rem;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 101;
+    top: 0%;
+    right: 12%;
+}
+
+
+
+
+.main1_find_id3_inner3_verification_code {
+    margin-top: 12px;
+    position: relative;
+}
+
+.main1_find_id3_inner3_verification_code > div:nth-child(1) > input {
+
+    width: 716px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 4px;
+    padding-left: 14px;
+}
+.main1_find_id3_inner3_verification_code > div:nth-child(1) > input:disabled {
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+    color: rgba(1, 1, 1, .3);
+}
+.main1_find_id3_inner3_verification_code > div:nth-child(1) > input::placeholder {
+    color: #999;
+    letter-spacing: -2px;
+}
+
+.verification_code_btn {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+
+    cursor: pointer;
+    font-size: 0.7rem;
+    color: #111;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    border: none;
+    background: #e5e5e5;
+    border-radius: .4rem;
+    padding: .4rem .6rem;
+    font-weight: 600;
+    z-index: 101;
+}
+
+.verification_code_btn:disabled {
+    background: hsla(0, 0%, 89.8%, .5);
+    color: rgba(1, 1, 1, .4);
+}
+
+
+/* 인증번호 체크 */
+.main1_find_id3_inner3_verification_code_pass > .main1_find_id3_inner3_verification_code_img {
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_success_48x48.png) no-repeat right 1.6rem center / 1.2rem;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 101;
+    top: 0%;
+    right: 12%;
+}
+
+
+
+.main1_find_id3_inner4 {
+    cursor: pointer;
+    margin-top: 90px;
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+    color: rgba(1, 1, 1, .3);
+    width: 716px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-align: center;
+    border-radius: 220px;
+    line-height: 50px;
+}
+
+.main1_find_id3_inner4.main1_find_id3_inner4_active {
+    color: white;
+    background-color: rgb(94, 43, 184);
+}
+
+
+.main1_find_id3_inner4 > input {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.main1_join5_inner1 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+.main1_join5_inner_img {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.main1_join5_inner2 {
+    cursor: pointer;
+    font-size: 20px;
+    width: 716px;
+    height: 48px;
+    color: white;
+    background-color: rgb(94, 43, 184);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main1_join5_inner3 {
+    cursor: pointer;
+    font-size: 20px;
+    width: 716px;
+    height: 48px;
+    color: white;
+    background-color: rgb(94, 43, 184);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+
+

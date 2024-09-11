@@ -1,0 +1,235 @@
+
+}@charset "UTF-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+  
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+.border {	
+    border: 1px solid red;		 
+}
+.center {
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.purple_font {
+	color: #5e2bb8;
+}
+.red_font {
+	color: #e32d1b;
+}
+.grey_font {
+	color: #999;
+}
+.title { /*굵은 글씨*/
+	font-size : 19px;
+	font-weight : 700;
+	height : 19px;
+	letter-spacing : -0.68px;
+	margin-top: 26px;
+    margin-left: 20px;
+} 
+.essential { /*보라색 배경의 필수*/
+	background-color : #5e2bb8;
+	width:29px;
+	height :15px;
+	padding : 2px 6px;
+	margin-top: 27px;
+	margin-left : 4px;
+	color : white;
+	font-size : 10px;
+	font-weight : 700;
+	letter-spacing : -0.36px;
+	border-radius : 4px 4px 4px 0;
+} 
+
+/*필요한 이미지*/
+.kakao_img {
+	background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_kakaopay_156x64.png);
+	content: "";
+    width: 3.9rem;
+    height: 1.6rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    display: inline-block;    
+    margin-top: 6px;
+}
+.empty_check_img {
+	background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/btn_radio_off_80x80.png);
+	content: "";
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    display: inline-block;
+    margin-right: .8rem;
+}
+.check_img {
+	background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/btn_radio_on_80x80.png);
+	content: "";
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    display: inline-block;
+    margin-right: .8rem;   
+}
+
+/* 예약창 전체 */
+#payment_page {
+	width : 768px;
+	height : auto;
+	padding : 0 0 0 0;
+}
+
+/* 예약창  */
+#payment_background-color {
+	background-color : rgb(244, 245, 247);
+}
+#payment_page {
+	width : 768px;
+	height : auto;
+
+}
+#payment {
+    height: auto;z
+    width: 768px;
+    background-color: white;
+}
+#payment > div:nth-child(1) {
+	padding : 30px 20px 12px 20px;
+	font-size : 22px;
+	font-weight : 700;
+	height : 65px;
+	letter-spacing : -0.84px;
+}
+#payment > div > div {
+	font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#payment > div > div > div:nth-child(1) {
+	color: #666;
+}
+#payment > div:nth-child(2) {
+	padding : 0 20px 16px 20px;
+}
+#payment > div:nth-child(2) > div:nth-child(1) {
+	width : 670px;
+	height : 43px;
+	margin-top : 11px;
+	font-size : 19px;
+	font-weight : 600;
+	letter-spacing : -0.68px;
+	}
+#payment > div:nth-child(2) > div:nth-child(2) {
+	padding-bottom: 15px;
+    border-bottom: 1px dotted grey;
+}
+#payment > div:nth-child(2) > div:nth-child(5) {
+	font-size : 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#payment > div:nth-child(2) > div:nth-child(5) > diV:nth-child(1) {
+	color: black;
+}
+
+/*결제상세 내역*/
+#payment_method {
+	width: 768px;
+    height: auto;
+    padding: 10px 6px 27px;
+    background-color: white;
+    margin-top: 30px;
+}
+#payment_method > div:nth-child(2) {
+    border: 1px solid #111;
+    border-radius: 1.2rem;
+    margin: 20px;
+    height: 65px;
+    padding: 0 20px;
+}
+#payment_method > div:nth-child(2) > div {
+	margin-top: 14px;
+    display: flex;
+}
+#payment_method > div:nth-child(2) > div > input {
+	width: 20px;
+}
+#payment_method > div:nth-child(2) > div > label:nth-child(2) {
+	font-size: 18px;
+    margin: 9px 10px 0px;
+}
+/*
+input[type='radio'],
+input[type='radio']:checked {
+  appearance: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 100%;
+  margin-right: 0.1rem;
+}
+*/
+
+#pay_button {
+	height : 84px;
+	padding : 20px 16px;
+	margin-top : 10px;
+} 
+#pay_button > div > button > div:nth-child(1) {
+	font-size : 13px;
+	margin-bottom : 5px;
+}
+#pay_button > div:nth-child(1) >  button {
+	border : 1px solid rgb(94, 43, 184);
+	background-color : rgb(94, 43, 184);
+	color : white;
+	width : 100%;
+	height : 52px;
+	border-radius : 50px; 
+	text-align : center;
+	margin-top: -4px;
+}
+#pay_button > div:nth-child(1) > button:hover {
+	border : 1px solid rgb(74, 39, 135);
+	background-color : rgb(74, 39, 135);
+}
+.button_base_big {
+    color: #111;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: inherit;
+    letter-spacing: -.06rem;
+    min-height: 4.2rem;
+    background-color: #f5f5f5;
+    border-radius: 5rem;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height : 50px;
+}
+}

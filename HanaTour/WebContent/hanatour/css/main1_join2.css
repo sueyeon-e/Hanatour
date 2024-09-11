@@ -1,0 +1,199 @@
+html {
+    height: auto ;
+    display: block;
+    font-size: 10px;
+    max-width: 768px;
+    margin: 0 auto;
+    background: #f4f5f9;
+}
+
+body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+
+    line-height: 1;
+    letter-spacing: -.4px;
+
+    overflow-x: hidden;
+}
+
+
+.main1_join2 {
+    width: 100%;
+}
+
+.main1_join2_inner {
+    width: 768px;
+    height: 919px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.main1_join2_inner1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 26px 0px 26px;
+}
+
+.main1_join2_inner1 > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 18px;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: -2px;
+    text-align: left;
+    height: 2.8rem;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+
+.main1_join2_inner1 > div:nth-child(1) > div:nth-child(1) { 
+    cursor: pointer;
+    display: block;
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_back_24.png);
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+.main1_join2_inner1 > div:nth-child(2) {
+    cursor: pointer;
+    background-image: url(https://image.hanatour.com/usr/static/img2/mobile/com/ico_home_24.png);
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.main1_join2_inner2 {
+    padding: 15px 26px 0px 26px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -.144rem;
+    color: #111;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main1_join2_inner3 {
+    padding: 15px 26px 0px 26px;
+}
+
+
+.main1_join2_inner3_header {
+    position: relative;
+    height: 60px;
+    padding-left: 40px;
+    font-weight: 600;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    line-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+
+.main1_join2_inner3_header_img {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/btn_check_off_80x80.png) no-repeat 0 0 / 2rem;
+    cursor: pointer;
+
+    position: absolute;
+    left: 2%;
+    top: 35%;
+}
+
+.main1_join2_inner3_header > label > .main1_join2_inner3_all_agreement {
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/btn_check_on_80x80.png) no-repeat 0 0 / 2rem;
+}
+
+
+
+
+
+.main1_join2_inner3_body > div {
+    position: relative; font-size: 1.1rem;
+    line-height: 1.42;
+    letter-spacing: -.072rem;
+    color: #666;
+
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+.main1_join2_inner3_body > div > label > input[type='checkbox'] {
+    display: none;
+    /* width: 50px; */
+    /* height: 50px; */
+}
+
+.main1_join2_inner3_body_img {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/btn_check_off_80x80.png) no-repeat 0 0 / 2rem;
+    cursor: pointer;
+
+    position: absolute;
+    left: 0%;
+    z-index: 101;
+}
+
+
+.main1_join2_agreement_active .main1_join2_inner3_body_img {
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/com/btn_check_on_80x80.png) no-repeat 0 0 / 2rem;   
+}
+
+
+.main1_join2_inner3_body > div > label  > span:nth-child(3) {
+    margin-left: 30px;
+}
+
+.main1_join2_inner3_body > div > label  > span:nth-child(3) > span {
+    cursor: pointer;
+    color: #4585ff;
+    text-decoration: underline;
+
+}
+
+.main1_join2_submit_btn {
+    cursor: pointer;
+    width: 716px;
+    height: 52px;
+    background-color: #5e2bb8;
+    color: #fff;
+    border-color: #5e2bb8;
+    border-radius: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.main1_join2_submit_btn > input {
+    display: none;
+}

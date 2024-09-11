@@ -1,0 +1,1650 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+
+.main1_type1 {
+    background-color: rgb(213, 234, 252);
+    height: 720px;
+}
+
+.main1_type1_inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 50px;
+}
+
+.main1_type1_search {
+   
+}
+
+
+.main1_type1_search_top {
+    margin-top: 74px;
+    margin-bottom: 35px;
+    font-size: 26px;
+    line-height: 34px;
+    color: #111;
+    letter-spacing: -.4px;
+}
+
+
+.main1_type1_search_bottom {
+    
+}
+
+
+.main1_type1_search_tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1_type1_search_tab > .main1_type1_search_tab_active {
+    color: rgb(17, 17, 17);
+    font-weight: 800;
+    border-bottom: 2px solid rgb(17, 17, 17) ;
+}
+
+
+.main1_type1_search_tab > div {
+    width: 110px;
+    height: 28px;
+
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(109, 123, 132);
+    letter-spacing: -0.4px;
+    line-height: 15px;
+    
+    border-bottom: 1px solid rgb(51, 51, 51) ;
+}
+
+
+.main1_type1_search_setting {    
+    margin-top: 24px;
+}
+
+.main1_type1_search_setting > div {
+    display: none;
+}
+
+.main1_type1_search_setting > .main1_type1_search_tab_active {
+    display: block;
+}
+
+
+
+
+/* 패키지 */
+.main1_type1_search_tour {
+    width: 330px;
+    height: 322px;
+}
+
+
+
+/* main1_type1_search_tour1 */
+.main1_type1_search_tour1 {
+    margin-bottom: 14px;
+}
+
+input[name='search_tour_arrival'] {
+    width: 330px;
+    height: 52px;
+    padding: 0px 14px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+input[name='search_tour_arrival']::placeholder {
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    letter-spacing: -1.5px;
+    font-weight: 400;
+}
+
+.main1_type1_search_tour1_input_empty > input[name='search_tour_arrival']::placeholder {
+    color: red;
+}
+
+
+
+
+/* main1_type1_search_tour2 */
+.main1_type1_search_tour2 {
+    margin-bottom: 14px;
+}
+
+.main1_type1_search_tour2 > select {
+    width: 330px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0px 14px;
+}
+
+.main1_type1_search_tour2 > select > option {
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400; 
+}
+
+
+
+/* main1_type1_search_tour3 */
+.main1_type1_search_tour3 {
+    margin-top: 14px;
+}
+
+input[name='search_tour_date'] {
+    width: 330px;
+    height: 42px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0px 14px;
+}
+
+input[name='search_tour_date']::placeholder {
+    color: #333;
+}
+
+
+.main1_type1_search_tour3_calender {
+    display: none;
+}
+
+
+
+
+/* main1_type1_search_tour4 */
+.main1_type1_search_tour4 {
+    margin-top: 16px;
+    display: flex;
+}
+
+.main1_type1_search_tour4 > label {
+    width: 161px;
+    height: 58px;
+    padding: 12px 0 0 75px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 1);
+    opacity: .3;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.main1_type1_search_tour4 > label.main1_type1_search_tour4_active {
+    opacity: 1.0;
+}
+
+
+.main1_type1_search_tour4 > label:nth-child(2) {
+    margin-left: 7px;
+}
+
+
+.main1_type1_search_tour4 > label:nth-child(1) > div > span:nth-child(1) {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/man/spr_man.png);
+    width: 40px;
+    height: 24px;
+    background-size: auto;
+    background-position: 0 -26px;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+}
+
+
+.main1_type1_search_tour4 > label:nth-child(2) > div > span:nth-child(1) {
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 24px;
+    background-size: auto;
+   
+    background-position: -42px -26px;
+
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/man/spr_man.png);
+    left: 18px;
+    top: 17px;
+    position: absolute;
+}
+
+.main1_type1_search_tour4 > label > input {
+    display: none;
+}
+
+
+
+/* main1_type1_search_tour5 */
+.main1_type1_search_tour5 {
+    cursor: pointer;
+    height: 56px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: white;
+    margin-top: 30px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.main1_type1_search_tour5:hover {
+    background-color: #111;
+    border: 1px solid #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 항공 */
+.main1_type1_search_airline {
+    width: 330px;
+    height: 309px;
+    /* background-color: aliceblue; */
+}
+
+
+.main1_type1_search_airline_tab {
+    display: flex;
+}
+
+.main1_type1_search_airline_tab > div {
+    width: 70px;
+    height: 34px;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    cursor: pointer;
+    border-radius: 17px;
+    font-size: 15px;
+    font-weight: 400;
+    height: 34px;
+    letter-spacing: -0.4px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 11px;
+}
+    
+.main1_type1_search_airline_tab > div:nth-child(3) {
+    width: 80px;
+}
+
+    
+.main1_type1_search_airline_tab > .main1_type1_search_airline_active {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(51, 51, 51);
+}
+
+
+.main1_type1_search_airline_search_setting > div {
+    display: none;
+}
+
+.main1_type1_search_airline_search_setting > .main1_type1_search_airline_active {  
+    display: block;
+}
+
+
+
+
+/* 왕복 */
+.main1_type1_search_airline_round_trip1 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1_type1_search_airline_round_trip1 > div {
+    position: relative;
+}
+
+
+.main1_type1_search_airline_round_trip1 > div:nth-child(1)::after,
+.main1_type1_search_airline_round_trip1 > div:nth-child(3)::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 13px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.main1_type1_search_airline_round_trip1 > div:nth-child(2) {
+    padding-top: 19px;
+    margin-left: -1px;
+    margin-right: 0px;
+}
+
+.main1_type1_search_airline_round_trip1 > div:nth-child(2) > span {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-position: -24px -43px;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_air.png);
+}
+
+.main1_type1_search_airline_round_trip1 > div > input {
+    width: 149px;
+    height: 52px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -1.4px;
+    padding-left: 32px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.main1_type1_search_airline_round_trip1 > div > input::placeholder {
+    color: #999;
+}
+
+.main1_type1_search_airline_round_trip1 > div > input:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+.main1_type1_search_airline_round_trip_submit_fail {
+    display: none;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #e32d1b;
+    font-weight: 400;
+    line-height: 8px;
+}
+
+
+
+.main1_type1_search_airline_round_trip2 {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.main1_type1_search_airline_round_trip2 > div {
+    position: relative;
+}
+
+.main1_type1_search_airline_round_trip2 > div::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    background-position: -135px -18px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+
+.main1_type1_search_airline_round_trip2 > div > input {
+    width: 149px;
+    height: 52px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -1.4px;
+    padding-left: 32px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.main1_type1_search_airline_round_trip2 > div > input:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+.main1_type1_search_airline_round_trip2_calender { 
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+
+
+
+
+.main1_type1_search_airline_round_trip3 { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    position: relative;
+}
+
+.main1_type1_search_airline_round_trip3 > div:nth-child(1) {
+    position: relative;
+}
+
+.main1_type1_search_airline_round_trip3 > div:nth-child(1)::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 16px;
+    height: 14px;
+    background-position: -232px -81px;
+    position: absolute;
+    top: 35%;
+    left: 6%;
+}
+
+
+
+.main1_type1_search_airline_round_trip3 > div:nth-child(1) > input {
+    width: 265px;
+    height: 42px;
+    padding-left: 35px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: -1.4px;
+    padding-left: 32px;
+    font-weight: 400;
+}
+
+.main1_type1_search_airline_round_trip3 > div:nth-child(1) > input:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+.main1_type1_search_airline_round_trip3 > div:nth-child(2) {
+    height: 42px;
+    color: #111;
+    line-height: 42px;
+    border-color: #fff;
+    width: 58px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.main1_type1_search_airline_round_trip3 > div:nth-child(2) > input {
+    display: none;
+}
+
+
+.main1_type1_search_airline_round_trip3 > div.round_trip_direct_active {
+    background-color: black;
+    color: white;
+}
+
+
+
+.search_airline_round_trip_member {
+    display: none;
+    width: 415px;
+    height: 500px;
+    padding: 35px 30px 0;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(50, 55, 89, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: absolute;
+    top: 115%;
+}
+ 
+.search_airline_round_trip_member1 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #111;
+    line-height: 1;
+}
+
+
+.search_airline_round_trip_member2 {
+    width: 336px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.search_airline_round_trip_member2 > div {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.search_airline_round_trip_member2 > div > div:nth-child(1) {
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+.search_airline_round_trip_member2 > div > div:nth-child(2) {
+    display: flex;
+}
+
+.search_airline_round_trip_member2 > div > div:nth-child(2) > div:nth-child(1) {
+    cursor: pointer;
+    background-position: -393px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+.search_airline_round_trip_member2 > div > div:nth-child(2) > div:nth-child(2) {
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    width: 70px;
+    text-align: center;
+    line-height: 33px;
+}
+
+
+
+.search_airline_round_trip_member2 > div > div:nth-child(2) > div:nth-child(3) {
+    cursor: pointer;
+    background-position: -425px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+
+
+
+.search_airline_round_trip_member_child {
+    margin-top: 30px;
+}
+
+.search_airline_round_trip_member_infant {
+    margin-top: 30px;
+}
+
+
+.search_airline_round_trip_member3 {
+    padding-top: 30px;
+    width: 336px;
+    border-top: 1px solid #111;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 17px;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+
+
+
+.search_airline_round_trip_member4 > div {
+    margin-top: 10px;
+    height: 24px;
+}
+
+
+.search_airline_round_trip_member4 > div > label {
+    display: flex;
+}
+
+.search_airline_round_trip_member4 > div > label > input { 
+    display: none;
+}
+
+
+.search_airline_round_trip_member4 > div > label > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/its/btn_radio_ic_off.png) no-repeat 50% / 100%;
+    width: 24px;
+    height: 24px;
+}
+
+
+.search_airline_round_trip_member > .search_airline_round_trip_member4 > div 
+> .search_airline_round_trip_seat_class_active  > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/com/btn_radio_ic_40@3x.png) no-repeat 50% / 100%;
+}
+
+
+.search_airline_round_trip_member4 > div > label > div:nth-child(2) {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+
+.search_airline_round_trip_member5 {
+    line-height: 36px;
+    margin: 17px -30px 0;
+    background-color: #f7f7f7;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+    margin-top: 43px;
+    height: 66px;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search_airline_round_trip_member_select {
+    cursor: pointer;
+    width: 110px;
+    height: 36px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.search_airline_round_trip_member_select:hover {
+    border-color: #43109f;
+    background-color: #43109f;
+}
+
+
+
+
+
+
+
+
+
+
+.main1_type1_search_airline_round_trip4 {
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #333;
+    border: 1px solid #333;
+    height: 56px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+
+.main1_type1_search_airline_round_trip4:hover {
+    background-color: #111;
+    border: 1px solid #111;
+}
+
+
+
+
+
+
+
+
+
+
+/* 편도 */
+
+.main1_type1_search_airline_one_way1 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main1_type1_search_airline_one_way1 > div {
+    position: relative;
+}
+
+
+.main1_type1_search_airline_one_way1 > div:nth-child(1)::after,
+.main1_type1_search_airline_one_way1 > div:nth-child(3)::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 13px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.main1_type1_search_airline_one_way1 > div:nth-child(2) {
+    padding-top: 19px;
+    margin-left: -1px;
+    margin-right: 0px;
+}
+
+.main1_type1_search_airline_one_way1 > div:nth-child(2) > span {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-position: -24px -43px;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_air.png);
+}
+
+.main1_type1_search_airline_one_way1 > div > input {
+    width: 149px;
+    height: 52px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -1.4px;
+    padding-left: 32px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.main1_type1_search_airline_one_way1 > div > input::placeholder {
+    color: #999;
+}
+
+.main1_type1_search_airline_one_way1 > div > input:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+.main1_type1_search_airline_one_way_submit_fail {
+    display: none;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #e32d1b;
+    font-weight: 400;
+    line-height: 8px;
+}
+
+
+
+.main1_type1_search_airline_one_way2 {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.main1_type1_search_airline_one_way2 > div {
+    position: relative;
+}
+
+.main1_type1_search_airline_one_way2 > div::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    background-position: -135px -18px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+
+.main1_type1_search_airline_one_way2 > div > input {
+    width: 265px;
+    height: 42px;
+    padding: 0 35px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: -1.4px;
+    padding-left: 32px;
+    font-weight: 400;
+}
+
+.main1_type1_search_airline_one_way2 > div > input:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+.main1_type1_search_airline_one_way2_calender { 
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+
+
+
+
+.main1_type1_search_airline_one_way3 { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    position: relative;
+}
+
+.main1_type1_search_airline_one_way3 > div:nth-child(1) {
+    position: relative;
+}
+
+.main1_type1_search_airline_one_way3 > div:nth-child(1)::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 16px;
+    height: 14px;
+    background-position: -232px -81px;
+    position: absolute;
+    top: 35%;
+    left: 6%;
+}
+
+
+
+.main1_type1_search_airline_one_way3 > div:nth-child(1) > input {
+    width: 265px;
+    height: 42px;
+    padding-left: 35px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: -1.4px;
+    padding-left: 32px;
+    font-weight: 400;
+}
+
+.main1_type1_search_airline_one_way3 > div:nth-child(1) > input:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+.main1_type1_search_airline_one_way3 > div:nth-child(2) {
+    height: 42px;
+    color: #111;
+    line-height: 42px;
+    border-color: #fff;
+    width: 58px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.main1_type1_search_airline_one_way3 > div:nth-child(2) > input {
+    display: none;
+}
+
+
+.main1_type1_search_airline_one_way3 > div.one_way_direct_active {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* search_airline_one_way_member */
+.search_airline_one_way_member {
+    display: none;
+    width: 415px;
+    height: 500px;
+    padding: 35px 30px 0;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(50, 55, 89, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: absolute;
+    top: 115%;
+}
+
+.search_airline_one_way_member1 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #111;
+    line-height: 1;
+}
+
+
+.search_airline_one_way_member2 {
+    width: 336px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.search_airline_one_way_member2 > div {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.search_airline_one_way_member2 > div > div:nth-child(1) {
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+.search_airline_one_way_member2 > div > div:nth-child(2) {
+    display: flex;
+}
+
+.search_airline_one_way_member2 > div > div:nth-child(2) > div:nth-child(1) {
+    cursor: pointer;
+    background-position: -393px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+.search_airline_one_way_member2 > div > div:nth-child(2) > div:nth-child(2) {
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    width: 70px;
+    text-align: center;
+    line-height: 33px;
+}
+
+
+
+.search_airline_one_way_member2 > div > div:nth-child(2) > div:nth-child(3) {
+    cursor: pointer;
+    background-position: -425px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+
+
+
+.search_airline_one_way_member_child {
+    margin-top: 30px;
+}
+
+.search_airline_one_way_member_infant {
+    margin-top: 30px;
+}
+
+
+.search_airline_one_way_member3 {
+    padding-top: 30px;
+    width: 336px;
+    border-top: 1px solid #111;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 17px;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+
+
+
+.search_airline_one_way_member4 > div {
+    margin-top: 10px;
+    height: 24px;
+}
+
+
+.search_airline_one_way_member4 > div > label {
+    display: flex;
+}
+
+.search_airline_one_way_member4 > div > label > input { 
+    display: none;
+}
+
+
+.search_airline_one_way_member4 > div > label > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/its/btn_radio_ic_off.png) no-repeat 50% / 100%;
+    width: 24px;
+    height: 24px;
+}
+
+
+.search_airline_one_way_member > .search_airline_one_way_member4 > div 
+> .search_airline_one_way_seat_class_active  > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/com/btn_radio_ic_40@3x.png) no-repeat 50% / 100%;
+}
+
+
+.search_airline_one_way_member4 > div > label > div:nth-child(2) {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+
+.search_airline_one_way_member5 {
+    line-height: 36px;
+    margin: 17px -30px 0;
+    background-color: #f7f7f7;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+    margin-top: 43px;
+    height: 66px;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search_airline_one_way_member_select {
+    cursor: pointer;
+    width: 110px;
+    height: 36px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.search_airline_one_way_member_select:hover {
+    border-color: #43109f;
+    background-color: #43109f;
+}
+
+
+
+
+
+.main1_type1_search_airline_one_way4 {
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #333;
+    border: 1px solid #333;
+    height: 56px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+.main1_type1_search_airline_one_way4:hover {
+    background-color: #111;
+    border: 1px solid #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 호텔 */
+.main1_type1_search_inn {
+    width: 330px;
+    height: 250px;
+}
+
+
+.main1_type1_search_inn1 {
+    margin-bottom: 14px;
+}
+
+input[name='search_inn_arrival'] {
+    width: 330px;
+    height: 52px;
+    padding: 0px 14px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+input[name='search_inn_arrival']::placeholder {
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    letter-spacing: -1.5px;
+    font-weight: 400;
+}
+
+.main1_type1_search_inn1_input_empty > input[name='search_inn_arrival']::placeholder {
+    color: red;
+}
+
+
+
+
+
+.main1_type1_search_inn2 {
+    margin-bottom: 14px;
+    position: relative;
+    display: flex;
+}
+
+
+.search_inn_date {
+    cursor: pointer;
+    display: flex;
+}
+
+
+.search_inn_date > div {
+    position: relative;
+}
+
+.search_inn_date > div:nth-child(1)::before {
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    background-position: -135px -18px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    position: absolute;
+    top: 34%;
+    left: 14%;
+}
+
+
+.search_inn_date > div:nth-child(1)::after {
+    content: "~";
+    position: absolute;
+    top: 34%;
+    right: 0%;
+}
+
+
+.search_inn_date > div:nth-child(2)::before {
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    background-position: -135px -18px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    position: absolute;
+    top: 34%;
+    left: 5%;
+}
+
+
+
+input[name='search_inn_date_departure'] {
+    width: 120px;
+    height: 42px;
+    padding-left: 37px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: none;
+}
+
+input[name='search_inn_date_arrival'] {
+    width: 210px;
+    height: 42px;
+    padding-left: 30px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    outline: none;
+}
+
+
+
+
+.main1_type1_search_inn2_calender {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 120%;
+    z-index: 100;
+}
+
+
+
+
+.main1_type1_search_inn3 {
+    position: relative;
+}
+
+.main1_type1_search_inn3::before {
+    width: 16px;
+    height: 14px;
+    background-position: -232px -81px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+
+input[name='search_inn_member'] {
+    width: 330px;
+    height: 42px;
+    padding-left: 37px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+
+
+
+.search_inn_room_member {
+    display: none;
+    width: 350px;
+    height: 409px;
+    padding: 40px 40px 0px;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(50, 55, 89, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: absolute;
+    top: 113%;
+    left: 0%;
+}
+
+.search_inn_room_member1 {
+    font-size: 17px;
+    color: #111;
+    line-height: normal;
+    
+}
+
+.search_inn_room_member2 {
+    width: 268px;
+    height: 32px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search_inn_room_member2 > div:nth-child(1) {
+    font-size: 13px;
+    color: #888;
+    line-height: 1;
+    font-weight: 400;
+}
+
+
+.search_inn_room_member2 > div:nth-child(2)  {
+    display: flex;
+    
+}
+
+
+.search_inn_room_member2 > div:nth-child(2) > div:nth-child(1) {
+    cursor: pointer;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: -393px -110px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    margin-top: -8px;
+}
+
+
+.search_inn_room_member2 > div:nth-child(2) > div:nth-child(2) {
+    width: 30px;
+    font-size: 15px;
+    color: #111;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 17px;
+    margin-right: 26px;
+}
+
+.search_inn_room_member2 > div:nth-child(2) > div:nth-child(3) {
+    margin-top: -8px;
+    cursor: pointer;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: -425px -110px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+.search_inn_room_member3 {
+    font-size: 17px;
+    color: #111;
+    letter-spacing: -.4px;
+    font-weight: 400;
+    margin-top: 53px;
+}
+
+
+
+.search_inn_room_member4 {
+    border-top: 1px solid #ddd;
+    margin-top: 11px;
+    padding-top: 61px;
+}
+
+.search_inn_room_member4 > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_inn_room_member4 > div > div:nth-child(1) {
+    width: 268px;
+    height: 32px;
+    font-size: 13px;
+    color: #888;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+
+
+.search_inn_room_member4 > div > div:nth-child(2) {
+    display: flex;
+}
+
+.search_inn_room_member4 > div > div:nth-child(2) > div:nth-child(1) {
+    cursor: pointer;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: -393px -110px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    margin-top: -8px;
+}
+
+
+.search_inn_room_member4 > div > div:nth-child(2) > div:nth-child(2) {
+    width: 30px;
+    font-size: 15px;
+    color: #111;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 25px;
+}
+
+
+.search_inn_room_member4 > div > div:nth-child(2) > div:nth-child(3) {
+    margin-top: -8px;
+    cursor: pointer;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: -425px -110px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+
+.search_inn_room_member_children {
+    margin-top: 15px;
+}
+
+
+
+.search_inn_room_member5 {
+    line-height: 36px;
+    margin: 17px -40px 0;
+    background-color: #f4f5f9;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_inn_room_member5 > div:nth-child(1) {
+    display: flex;
+}
+
+
+.search_inn_room_member5 > div:nth-child(2) {
+    cursor: pointer;
+    width: 110px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #5e2bb8;
+    border: solid 1px #5e2bb8;
+    font-weight: 400;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.search_inn_room_member5 > div:nth-child(2):hover {
+    border-color: #43109f;
+    background-color: #43109f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main1_type1_search_inn4 {
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #333;
+    border: 1px solid #333;
+    height: 56px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+.main1_type1_search_inn4:hover {
+    background-color: #111;
+    border: 1px solid #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 유형1 이미지 */
+
+.main1_type1_img > .bx-wrapper {
+    border: none;
+}
+
+.bxslider > img {
+    width: 740px;
+    height: 610px;
+}
+
+
+
+
+
+.main1_type7 {
+    margin-top: 30px;
+}
+.main1_type7_inner {
+    width: 1200px;
+    height: 403px;
+    margin: 0 auto;
+}
+
+.main1_type7_item_container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+}
+.main1_type7_item {
+    width: 190px;
+    height: 273px;
+}
+
+
+.main1_type7_img > img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.main1_type7_title {
+    text-align: center;
+    color:  rgb(17, 17, 17);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.main1_type7_tag {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    line-height: 18px;
+    margin-top: 10px;
+}

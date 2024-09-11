@@ -1,0 +1,705 @@
+
+.airline_reservation_header2 {
+    width: 100%;
+    margin-top: 10px;
+}
+.airline_resercation_header_inner {
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #111;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_reservation_header_left {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_reservation_header_right {
+    width: 441px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    padding-top: 8px;
+}
+
+
+.airline_reservation_header_right1 {
+    position: relative;
+}
+
+.airline_reservation_header_right1 > span:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    background-position: 0 -365px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    position: absolute;
+    top: -40%;
+    left: -70%;
+}
+
+.airline_reservation_header_right3 {
+    position: relative;
+}
+
+.airline_reservation_header_right3 > span:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    background-position: -135px -365px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    position: absolute;
+    top: -40%;
+    left: -50%;
+}
+
+.airline_reservation_header_right5 {
+    position: relative;
+}
+
+.airline_reservation_header_right5 > span:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    background-position: -162px -365px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    position: absolute;
+    top: -40%;
+    left: -60%;
+}
+
+.airline_reservation_header_right2,
+.airline_reservation_header_right4 {
+    width: 50px;
+    height: 2px;
+    background-color: #eee;
+    margin-top: 5px;
+    margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+/* airline_payment_body */
+
+.airline_payment_body {
+    width: 1200px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* airline_payment_left */
+.airline_payment_left{
+    width: 870px;
+}
+
+
+
+.airline_payment_reservation_header {
+    font-size: 22px;
+    line-height: 30px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: -.4px;
+
+    margin: 40px 0 19px 0;
+}
+
+
+
+
+
+
+/* airline_payment_reservation_body */
+.airline_payment_reservation_body {
+    width: 870px;
+    border-top: 1px solid #999;
+}
+
+.airline_payment_reservation_body > div div {
+    padding: 15px 20px;
+}
+
+
+
+.airline_payment_reservation_body1,
+.airline_payment_reservation_body2 {
+    height: 73px;
+}
+
+
+.airline_payment_reservation_body1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_payment_reservation_body1 > div:nth-child(1),
+.airline_payment_reservation_body1 > div:nth-child(3) {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 147.89px;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    line-height: 42px;
+}
+
+.airline_payment_reservation_body1 > div:nth-child(2),
+.airline_payment_reservation_body1 > div:nth-child(4) {
+    width: 287.11px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.airline_payment_reservation_body1 > div:nth-child(2) > input {
+    width: 250px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+.airline_payment_reservation_body1 > div:nth-child(4) > input {
+    width: 250px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.airline_payment_reservation_body1 > div:nth-child(2) > input::placeholder,
+.airline_payment_reservation_body1 > div:nth-child(4) > input::placeholder {
+    color: #999;
+    letter-spacing: -0.4px;
+}
+
+
+
+
+.airline_payment_reservation_body2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_payment_reservation_body2 > div:nth-child(1),
+.airline_payment_reservation_body2 > div:nth-child(3) {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 147.89px;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    line-height: 42px;
+}
+
+.airline_payment_reservation_body2 > div:nth-child(2),
+.airline_payment_reservation_body2 > div:nth-child(4) {
+    width: 287.11px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.airline_payment_reservation_body2 > div:nth-child(2) > input {
+    width: 250px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+.airline_payment_reservation_body2 > div:nth-child(4) > input {
+    width: 250px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.airline_payment_reservation_body2 > div:nth-child(2) > input::placeholder,
+.airline_payment_reservation_body2 > div:nth-child(4) > input::placeholder {
+    color: #999;
+    letter-spacing: -0.4px;
+}
+
+
+
+
+
+
+
+.airline_payment_reservation_body3 {
+    height: 80px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.airline_payment_reservation_body3 > div:nth-child(1) {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 147.89px;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    line-height: 48px;
+}
+
+
+.airline_payment_reservation_body3 > div:nth-child(2) {
+    display: flex;
+    padding-left: 0px;
+}
+
+
+.airline_payment_reservation_body3 > div:nth-child(2) > div:nth-child(1) {
+    margin-top: -14px;
+}
+
+.airline_payment_reservation_body3 > div:nth-child(2) > div:nth-child(1) > select {
+    width: 350px;
+    height: 42px;
+    border: 1px solid #cdcdcd;
+    padding: 0 15px;
+
+}
+
+.airline_payment_reservation_body3 > div:nth-child(2) > div:nth-child(2) {
+    margin-top: -14px;
+    margin-left: -32px;
+}
+.airline_payment_reservation_body3 > div:nth-child(2) > div:nth-child(2) > input {
+    width: 250px;
+    height: 42px;
+    border: 1px solid #cdcdcd;
+
+    padding: 0 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.airline_payment_reservation_body3 > div:nth-child(2) > div:nth-child(2) > input::placeholder {
+    color: #999;
+    letter-spacing: -0.4px;
+}
+
+
+
+.airline_payment_reservation_footer {
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #888;
+    text-align: left;
+    padding: 2px 0 2px 14px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    position: relative;
+}
+
+.airline_payment_reservation_footer::before {
+    content: '※';
+    width: auto;
+    height: auto;
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 3px;
+    position: absolute;
+    top: 10%;
+    left: -0.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* airline_passenger */
+.airline_passenger_title {
+    font-size: 22px;
+    line-height: 30px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: -.4px;
+
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
+.airline_passenger_info {
+    margin-top: 30px;
+}
+
+.airline_passenger_info_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+    position: relative;
+}
+
+.airline_passenger_info_header_left {
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_passenger_info_header_right {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-right: 20px;
+
+    color: #111;
+    letter-spacing: -.6px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+
+    /* position: relative; */
+}
+
+.airline_passenger_info_header_right::before {
+    content: "";
+    background: url(https://image.hanatour.com/usr/static/img2/pc/pmt/ico_alert_line_s16.png) 50% / 100%;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+
+
+
+
+.airline_passenger_info_header_right > div {
+    cursor: pointer;
+    margin-top: -4px;
+    margin-left: 56px;
+    position: relative;
+}
+
+.airline_passenger_info1 .airline_passenger_info_header_right_reservation {
+    display: block;
+}
+
+.airline_passenger_info_header_right_reservation {
+    display: none;
+}
+
+
+.airline_passenger_info_header_right_reservation > span:nth-child(1) {
+    display: inline-block;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pmt/ico_check_s24.png);
+    background-position: 0 0;
+    width: 24px;
+    height: 24px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -45%;
+}
+
+.airline_passenger_info_header > .airline_passenger_info_header_right 
+> .airline_passenger_info_header_right_reservation_active > span:nth-child(1) {
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pmt/ico_check_on_s24.png);
+}
+
+.airline_passenger_info_header > .airline_passenger_info_header_right 
+> .airline_passenger_info_header_right_passport_active > span:nth-child(1) {
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pmt/ico_check_on_s24.png);
+}
+
+
+
+.airline_passenger_info_header_right_passport > span:nth-child(1) {
+    display: inline-block;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pmt/ico_check_s24.png);
+    background-position: 0 0;
+    width: 24px;
+    height: 24px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -28%;
+}   
+
+
+
+.airline_passenger_info_body {
+    border-top: 1px solid #999;
+}
+
+.airline_passenger_info_body > div {
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  */
+.airline_passenger_info_body > div div {
+    padding: 15px 20px;
+}
+
+.airline_passenger_info_body > div > div:nth-child(1),
+.airline_passenger_info_body > div > div:nth-child(3) {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 147.89px;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    line-height: 42px; 
+}
+
+.airline_passenger_info_body > div > div:nth-child(2),
+.airline_passenger_info_body > div > div:nth-child(4) {
+    width: 287.11px;
+    border-bottom: 1px solid #ddd;
+}
+
+.airline_passenger_info_body > div > div:nth-child(2) > input,
+.airline_passenger_info_body > div > div:nth-child(4) > input {
+    width: 250px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+.airline_passenger_info_body > div > div:nth-child(2) > input::placeholder,
+.airline_passenger_info_body > div > div:nth-child(4) > input::placeholder {
+    color: #999;
+    letter-spacing: -0.4px;
+}
+
+.airline_passenger_info_body1 > div:nth-child(4) {
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+
+.airline_passenger_info_body > .airline_passenger_info_body2 > div:nth-child(4) > input {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.airline_passenger_info_body6 > div:nth-child(2) > select,
+.airline_passenger_info_body6 > div:nth-child(4) > select {
+    width: 250px;
+    height: 42px;
+    padding: 0 10px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+
+
+
+.passport_ocr > select {
+    display: none;
+}
+
+
+input[type="submit"] {
+    visibility: hidden;
+}
+
+
+
+
+
+/* airline_payment_right */
+.airline_payment_right {
+    width: 306px;
+    margin-top: 39px;
+}
+
+.airline_payment_right_header {
+    line-height: 30px;
+    color: #111;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    margin-bottom: 20px;
+}
+
+
+.airline_payment_right_price_info {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd
+}
+
+
+.airline_payment_right_price_info > div:nth-child(1) {
+    color: #111;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -0.56px;
+}
+
+.airline_payment_right_price_info > div:nth-child(2) {
+    margin-top: 15px;
+    font-size: 26px;
+    color: #5e2bb8;
+    text-align: right;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.airline_payment_right_price_info > div:nth-child(2) > span:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.airline_payment_right_price_info > div:nth-child(3) { 
+    font-size: 13px;
+    color: #666;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.airline_payment_right_price_info > div:nth-child(4) {
+    margin-top: 15px;
+    padding-top: 17px;
+    border-top: 1px dashed #ddd;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.airline_payment_right_price_info > div:nth-child(4) > div:nth-child(1){ 
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -0.56px;
+    font-size: 14px;
+}
+
+.airline_payment_right_personnel_price {
+    padding: 24px 20px;
+    font-size: 17px;
+    font-weight: 400;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.airline_payment_right_description {
+    line-height: 1.5;
+    margin: 15px 10px 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+}
+
+.airline_payment_right_submit_btn {
+    cursor: pointer;
+    margin-top: 15px;
+    color: white;
+    font-weight: 500;
+    background-color: #5e2bb8;
+    border: 1px solid #5e2bb8;
+    height: 56px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 4px;
+    
+}
+
+.airline_payment_right_submit_btn:hover {
+    background-color: #43109f;;
+}
+
+.airline_payment_right_rule_info {
+    cursor: pointer;
+    background-color: #fff;
+    border: solid 1px #c2c2c2;
+    border-radius: 4px;
+    width: 306px;
+    height: 46px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+    color: #333;
+    word-break: break-all;
+    line-height: 44px;
+    letter-spacing: -.4px;
+    padding: 0 30px;
+
+}
+
+.airline_payment_right_rule_info:hover {
+    border: solid 1px #5e2bb8;
+}

@@ -1,0 +1,798 @@
+
+.type1_inner {
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 54%;
+    left: 18.5%;
+}
+
+.airline_search_tab {
+    line-height: 10px;
+    font-weight: 400;
+    color: #aaa;
+    font-size: 15px;
+    letter-spacing: -.4px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.airline_search_tab > div {
+    cursor: pointer;
+    margin-right: 38px;
+    padding-bottom: 10px;
+}
+
+.airline_search_tab > .airline_search_tab_active {
+    color: #111;
+    border-bottom: 3px solid #1e9eed;
+}
+
+
+
+.round_trip,
+.one_way,
+.multi_city {
+    display: none;
+}
+
+.round_trip.airline_search_tab_active,
+.one_way.airline_search_tab_active,
+.multi_city.airline_search_tab_active {
+    display: block;
+}
+
+
+
+/* 왕복 */
+.round_trip1 {
+    display: flex;
+}
+
+
+.round_trip_departure_airport {
+    position: relative;
+}
+
+.round_trip_departure_airport::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 13px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    position: absolute;
+    left: 4%;
+    top: 38%;
+}
+
+input[name='round_trip_departure_airport'] {
+    width: 410px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_departure_airport']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+
+
+
+/*  공항목록 시작 */
+
+.search_airport_list.search_airport_list_active {
+    display: block;
+}
+.search_airport_list {
+    display: none;
+    width: 695px;
+    height: 565px;
+    padding: 30px 30px 0;
+    background: #fff;
+    border: 1px solid #111;
+    box-shadow: 0 5px 20px 0 rgba(17, 17, 17, 0.3);
+    z-index: 100;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+}
+
+.search_airport_list1 {
+    font-size: 16px;
+    color: #111;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_airport_list1 > div:nth-child(1) {
+    padding-top: 7px;
+}
+
+.search_airport_list_close {
+    cursor: pointer;
+    display: flex;
+}
+
+.search_airport_list_close > div:nth-child(2) {
+    margin-left: 8px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/icon_header_Black_48@3x.png) no-repeat 50% / 100%;
+}
+
+
+.search_airport_list2 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.search_airport_recent {
+    position: relative;
+    background-color: #eef0f3;
+    font-size: 13px;
+    border-radius: 4px;
+    width: auto;
+    line-height: 20px;
+    margin: 0 8px 8px 0;
+    padding: 6px 25px 6px 10px;
+}
+
+
+.search_airport_recent > span:nth-child(1):hover { 
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.search_airport_recent > span:nth-child(2) {
+    cursor: pointer;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ic_btn_del.png) no-repeat 50% / 100%;
+    margin-top: -4px;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+
+
+.search_airport_recent_delete {
+    cursor: pointer;
+    background-color: #eef0f3;
+    font-size: 13px;
+    border-radius: 4px;
+    width: auto;
+    line-height: 20px;
+    margin: 0 8px 8px 0;
+    padding: 6px 10px 6px 10px;
+}
+
+.search_airport_list3 {
+    margin-top: 13px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.search_airport_list3::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 16px;
+    height: 16px;
+    background-position: -19px -52px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+
+
+
+.search_airport_list4 {
+    display: flex;
+    height: 379px;
+    border: 1px solid #ddd;
+    margin-top: 19px;
+}
+
+
+
+.search_airport_list4_left {
+    overflow-y: scroll;
+}
+
+.search_airport_list4_left > div {
+    cursor: pointer;
+    width: 189px;
+    height: 53px;
+    line-height: 24px;
+    padding: 14px 12px;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+
+.search_airport_list4_left > .search_airport_list4_active {
+    color: #5e2bb8;
+    background-color: #fff;
+}
+
+
+
+.search_airport_list4_right {
+    width: 424px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.search_airport_list4_container {
+    display: none;
+}
+
+.search_airport_list4_right > .search_airport_list4_active {
+    width: 424px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_airport_list4_right > .search_airport_list4_active > div {
+    cursor: pointer;
+    width: 212px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -.4px;
+    padding: 10px 20PX 10px 20px;
+}
+
+.search_airport_list4_right > .search_airport_list4_active > div:hover {
+    text-decoration: underline;
+}
+/* 공항목록 종료 */
+
+
+
+
+/* 도착지 <-> 출발지 */
+.round_trip_change {
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_air.png);
+    width: 26px;
+    height: 26px;
+    background-position: -271px 0;
+    margin: 18px 30px 0px;
+}
+
+
+
+.round_trip_arrival_airport {
+    position: relative;
+}
+
+.round_trip_arrival_airport::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 13px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    position: absolute;
+    left: 4%;
+    top: 38%;
+}
+
+
+input[name='round_trip_arrival_airport']  {
+    width: 410px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_arrival_airport']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+.round_trip_direct_flight {
+    cursor: pointer;
+    margin-left: 8px;
+    height: 62px;
+    width: 70px;
+    border: 2px solid #c2c2c2;
+    font-size: 13px;
+    color: #666;
+    padding-top: 23px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.round_trip_direct_flight.round_trip_direct_flight_active {
+    border: 2px solid #1e9eed;
+}
+
+input[name='round_trip_direct'] {
+    display: none;
+}
+
+.weather_info {
+	cursor: pointer;
+	border:1px solid black;
+	width: 100px;
+	height: 30px;
+	margin-left: 20px;
+	text-align: center;
+	padding-top: 5px;
+	position: relative;
+}
+
+
+.weather_info_list {
+	display: none;
+	width: auto;
+	height: 500px;
+	border:1px solid black;
+	background-color: aliceblue;	
+	position: absolute;
+	top: 100%;
+	right: 80%;
+	z-index: 100;
+	overflow-y: scroll;
+}
+
+
+.weather_info_list > table {
+      border-collapse: collapse; 
+}
+
+.weather_info_list > table th,
+.weather_info_list > table td {
+  	border: 1px solid black; 
+  	padding: 8px; 
+   	text-align: left;
+   	width: auto; 
+}
+
+
+
+
+
+
+
+/* round_trip2 */
+.round_trip2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.round_trip2_left {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*  왕복 출발 날짜 */
+.round_trip_departure_date {
+    position: relative;
+}
+
+.round_trip_departure_date::after {
+    width: 14px;
+    height: 14px;
+    background-position: -135px -18px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+
+    position: absolute;
+    left: 8%;
+    top: 38%;
+}
+
+
+input[name='round_trip_departure_date_calender'] {
+    width: 201px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_departure_date_calender']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+/* input[name='round_trip_departure_date_calender'] {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+} */
+
+
+
+
+
+
+
+/*  왕복 도착 날짜 */
+.round_trip_arrival_date {
+    position: relative;
+}
+
+.round_trip_arrival_date::after {
+    width: 14px;
+    height: 14px;
+    background-position: -135px -18px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+
+    position: absolute;
+    left: 8%;
+    top: 38%;
+}
+
+
+
+input[name='round_trip_arrival_date_calender'] {
+    width: 201px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_arrival_date_calender']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+/* input[name='round_trip_arrival_date_calender'] {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+} */
+
+
+
+
+/* 왕복 인원수.좌석 */
+.round_trip2_right { 
+    margin-left: 86px;
+}
+
+input[name='round_trip_member'] {
+    width: 410px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_member']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+/* 왕복 submit */
+.round_trip_submit {
+    cursor: pointer;
+    width: 213px;
+    background: #1e9eed;
+    border-color: #1e9eed;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 8px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 17px;
+    border-radius: 8px 0 8px 8px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+
+
+
+/* 달력 시작*/
+
+section.lightpick {
+    position: absolute;
+    top: 113%;
+    left: 0%;
+    border: 1px solid black;
+}
+
+.round_trip_calender_select {
+    display: none;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 0px;
+    color: #fff;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    text-align: center;
+    padding: 24px 30px;
+
+    position: absolute;
+    top: 300%;
+    right: -357%;
+    z-index: 101;
+}
+/* 달력 종료 */
+
+
+
+
+
+
+.round_trip_member {
+    display: none;
+    width: 415px;
+    height: 500px;
+    padding: 35px 30px 0;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(50, 55, 89, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: absolute;
+    top: 115%;
+    z-index: 100;
+}
+ 
+.round_trip_member1 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #111;
+    line-height: 1;
+}
+
+
+.round_trip_member2 {
+    width: 336px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.round_trip_member2 > div {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.round_trip_member2 > div > div:nth-child(1) {
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+.round_trip_member2 > div > div:nth-child(2) {
+    display: flex;
+}
+
+.round_trip_member2 > div > div:nth-child(2) > div:nth-child(1) {
+    cursor: pointer;
+    background-position: -393px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+.round_trip_member2 > div > div:nth-child(2) > div:nth-child(2) {
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    width: 70px;
+    text-align: center;
+    line-height: 33px;
+}
+
+
+
+.round_trip_member2 > div > div:nth-child(2) > div:nth-child(3) {
+    cursor: pointer;
+    background-position: -425px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+
+
+
+.round_trip_member_child {
+    margin-top: 30px;
+}
+
+.round_trip_member_infant {
+    margin-top: 30px;
+}
+
+
+.round_trip_member3 {
+    padding-top: 30px;
+    width: 336px;
+    border-top: 1px solid #111;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 17px;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+
+
+
+.round_trip_member4 > div {
+    margin-top: 10px;
+    height: 24px;
+}
+
+
+.round_trip_member4 > div > label {
+    display: flex;
+}
+
+.round_trip_member4 > div > label > input { 
+    display: none;
+}
+
+
+.round_trip_member4 > div > label > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/its/btn_radio_ic_off.png) no-repeat 50% / 100%;
+    width: 24px;
+    height: 24px;
+}
+
+
+.round_trip_member > .round_trip_member4 > div 
+> .round_trip_seat_class_active  > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/com/btn_radio_ic_40@3x.png) no-repeat 50% / 100%;
+}
+
+
+.round_trip_member4 > div > label > div:nth-child(2) {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+
+.round_trip_member5 {
+    line-height: 36px;
+    margin: 17px -30px 0;
+    background-color: #f7f7f7;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+    margin-top: 43px;
+    height: 66px;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.round_trip_member_select {
+    cursor: pointer;
+    width: 110px;
+    height: 36px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.round_trip_member_select:hover {
+    border-color: #43109f;
+    background-color: #43109f;
+}
+
+
+
+

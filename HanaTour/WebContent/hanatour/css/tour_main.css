@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+.center {
+	margin: 0 auto;
+}
+.prepare_container {
+	margin-top: 20px;
+}
+
+.prepare_container_inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 276.5px;
+    background-color: white;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.prepare {
+    width: 282px;
+    height: 276.5px;
+    
+}
+
+.prepare > a {
+    text-decoration: none;
+}
+
+.prepare_img > img {
+    width: 282px;
+    height: 210px;
+    margin-bottom: 20px;
+}
+.prepare_title {
+	width: 282px;
+	height: 22.5px;
+	font-size: 15px;
+	color: #666;
+}
+.prepare strong {
+	width: 282px;
+	height: 12px;
+	margin-top: 7px;
+	font-size: 17px;
+	color: #333;
+	font-weight: 600;
+}
+.bottom_container {
+	width: 1200px;
+	height: 616.59px;
+}
+.bottom_consult_box {
+	width: 1200px;
+	height: 265.5px;
+}
+.bottom_sell_box {
+	width: 1200px;
+	height: 182.5px;
+	margin-top: 30px;
+}
+.bottom_bank_box {
+	width: 1200px;
+	height: 108.59px;
+	margin-top: 30px;
+}
+.bottom_title {
+	width: 1200px;
+	height: 37.5px;
+	font-size: 37.5px;
+	color: #333;
+	font-weight: 400;
+}
+.bottom_box {
+	position: relative;
+	width: 1200px;
+	height: 198px;
+	margin-top: 30px;
+	padding: 27px 40px;
+	border: 1px solid #e7e7e7;
+	background-color: #f8f8f8;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.guide_board {
+	width: 1118px;
+	height: 91px;
+	position: relative;
+}
+.guide_board a {
+	color: #5e2bb8;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+.board_text {
+	width: 610.94px;
+	height: 91px;
+}
+.guide_board ul {
+	position: absolute;
+    left: 50px;
+}
+.guide_board li {
+	height: 27px;
+	margin-top: 5px;
+	list-style: none;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.icon_tv {
+	width: 30px;
+	height: 29px;
+	margin-right: 20px;
+	content: "";
+    display: inline-block;
+    background: url(https://fnd.hanatour.com/src/assets/img/ico-board.b9fd40.png) no-repeat;
+    position: absolute;
+}
+.guide_tel {
+	position: relative;
+	width: 1118px;
+	height: 31px;
+	margin-top: 20px;
+}
+.guide_tel strong {
+	color: #5e2bb8;
+	padding-left: 10px;
+}
+.icon_question_mark {
+	position: absolute;
+	width:	30px;
+	height: 31px;
+	margin-right: 20px;
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://fnd.hanatour.com/src/assets/img/ico-tel.fa23b3.png) no-repeat;
+}
+
+.guide_tel ul {
+	position: absolute;
+	left: 50px;
+}
+.guide_tel li {
+	list-style: none;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.icon_guide_join {
+	position: absolute;
+	width: 32px;
+	height: 27px;
+	margin-right: 20px;
+	content: "";
+    display: inline-block;
+    vertical-align: top;
+    background: url(https://fnd.hanatour.com/public/img/ico_join.png) no-repeat;
+}
+.join_text {
+	width: 609.45px;
+	height: 59px;
+	position: absolute;
+    left: 92px;
+}
+.join_text a {
+	color: #5e2bb8;
+}
+.join_text strong {
+	color: #5e2bb8;
+	padding-left: 10px;
+}
+
+.bank_title {
+	width: 1118px;
+	height: 19.59px;
+	margin-bottom: 12px;
+	font-size: 14px;
+	color: #333;
+	letter-spacing: -.4px;
+	font-weight: 600;
+}
+.bank_info {
+	width: 1118px;
+	height: 21px;
+	line-height: 1.5;
+	font-size: 14px;
+	color: #333;
+	letter-spacing: -.4px;
+}
+.type8_img > img {
+    object-fit: cover !important;
+    left: 50%;
+}
+#tour_search_city {
+	width: 1200px;
+	height: 102px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 52px;
+	left: 50%;
+	transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tour_search_inner {
+	width: 906px;
+	height: 62px;
+}
+.type1_img img {
+    transform: translateX(-10.5%);
+}
+.city_keyword {
+	width: 906px;
+	height: 62px;
+	padding-left: 20px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 16px;
+    line-height: 60px;
+    color: #888;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+#btn_search_city_kw {
+	width: 224px;
+	height: 62px;
+	background: #5e2bb8;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	border-radius: 8px 0 8px 8px;
+	margin-left: 10px;
+}

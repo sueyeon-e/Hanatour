@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+.center {
+	margin: 0 auto;
+}
+.fl {
+	float: left;	
+}
+.fr {
+	float: right;
+}
+.benefit_container {
+	margin-top: 30px;
+}
+
+.benefit_container_inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 276.5px;
+    background-color: white;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.benefit {
+    width: 282px;
+    height: 276.5px;
+    
+}
+
+.benefit > a {
+    text-decoration: none;
+}
+
+.benefit_img > img {
+    width: 282px;
+    height: 210px;
+    margin-bottom: 20px;
+}
+.benefit_title {
+	width: 282px;
+	height: 22.5px;
+	font-size: 15px;
+	color: #666;
+}
+.benefit strong {
+	width: 282px;
+	height: 12px;
+	margin-top: 7px;
+	font-size: 17px;
+	color: #333;
+	font-weight: 600;
+}
+.type8_img img {
+	object-fit: cover;
+}
+.type1_img img {
+	transform: translateX(-10.5%);
+}
+#search_box {
+	width: 1200px;
+	height: 104px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 52px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search_city_kw {
+	width: 320px;
+	height: 64px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#search_city_kw input {
+	width: 320px;
+	height: 62px;
+    border-radius: 4px;
+    float: none;
+    display: block;
+    padding-left: 20px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 16px;
+    line-height: 60px;
+    color: #888;
+    margin-left: 0;
+}
+#search_date_kw {
+	width: 295px;
+	height: 64px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#search_date_kw input {
+	width: 295px;
+	height: 64px;	
+	border-radius: 4px;
+    float: none;
+    display: block;
+    padding-left: 20px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 16px;
+    line-height: 60px;
+    color: #888;
+    margin-left: 0;	
+}
+#search_person_kw {
+	width: 295px;
+	height: 64px;
+	display: inline-block;
+}
+#search_person_kw input {
+	width: 295px;
+	height: 64px;
+	border-radius: 4px;
+    float: none;
+    display: block;
+    padding-left: 20px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 16px;
+    line-height: 60px;
+    color: #888;
+    margin-left: 0;
+}
+#btn_hotel_search {
+	width: 222px;
+	height: 64px;
+	background: #0fbfc7;
+    border: 1px solid #0fbfc7;
+    color: #fff;
+    border-radius: 8px 0 8px 8px;
+    margin-left: 10px;
+}
+#main_city_kw_container {
+	width: 695px;
+	height: 536px;
+	background-color: royalblue;
+	padding: 30px 30px 0;
+	position: absolute;
+    top: 540px;
+    left: 162px;
+    border: 1px solid black;
+}
+
+#type_inner {
+	position: relative;
+}
+.main_city_title {
+	width: 633px;
+	height: 44px;
+	display: flex;
+	color: #333;
+	background-color: #f7f7f7;
+	align-items: center;
+    justify-content: center;
+	font-size: 14px;
+	
+}

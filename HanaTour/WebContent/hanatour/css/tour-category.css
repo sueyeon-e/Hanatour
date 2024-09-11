@@ -1,0 +1,2015 @@
+@charset "UTF-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+  
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+    overflow: auto;
+    width: 100%;
+}
+.border {	
+    border: 1px solid red;		 
+}
+.center {
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.purple_font {
+	color : #5e2bb8;
+}
+.grey_font {
+	color : #666;
+}
+.white_font {
+	color : white;
+}
+.blue_font {
+	color : #07d0da;
+}
+
+
+/* 서브메뉴 */
+.sub_menu_container {
+    display: none;
+    background-color: aliceblue;
+    /* width: 1910px; */
+    /* margin-left: -10px; */
+}
+.sub_menu {
+    width: 1500px;
+    height: auto;
+    background-color: lightpink;
+    margin: 0 auto;
+}
+
+.sub_top {
+    height: 200px;
+    background-color: lightgoldenrodyellow;
+}
+.sub_bottom {
+    height: 200px;
+    background-color: lightblue;
+}
+
+.sub_item {
+    width: 200px;
+    float: left;
+}
+
+/*윗부분*/
+#div_top {
+	width : 1200px;
+	height : 63px;
+	border-bottom : 2px solid black;
+	margin-top : 50px;
+	margin-bottom : 40px;
+}
+#div_top > div:nth-child(1){
+	font-size : 32px;
+	font-weight : 600;
+	height : 33px;
+	letter-spacing : -0.4px;
+}
+#double_click {
+	cursor: pointer;
+}
+#div_top > div:nth-child(1) > div:nth-child(1) > img {
+	margin-left: 10px;
+    margin-bottom: 6px;
+}
+#div_top > div:nth-child(1) > form > div > input {
+    height: 40px;
+    width: 226px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    border-radius: 2px;
+    top: -39px;
+    position: relative;
+} 
+.grey_x_img {
+	background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: -122px -39px;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    font-size: 1px;
+    overflow: hidden;    
+}
+#where_hide {
+    position: absolute;
+    top: 280px;
+    background-color: white;
+    width: 695px;
+    padding: 30px 28px 0;
+    z-index: 5;
+    border: 1px solid black;
+    font-size: 14px;
+}
+#where_hide > div:nth-child(1) {
+	margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 12px !important;
+}
+#where_hide > div:nth-child(2) > div {
+	width : 303px;
+	padding: 6px 10px 6px 0;
+	margin-right : 15px;
+} 
+#where_hide > div:nth-child(3) {
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 14px;
+    letter-spacing: normal;
+    padding-top: 14px;
+} 
+#div_top > div:nth-child(2) {
+	width : 505px;
+	height : 46px;
+	mrgin-bottom : 15px;
+	font-size : 15px;
+	font-weight : 400;
+	letter-spacing : -0.4px;
+}
+#div_top > div:nth-child(2) > form >  div:nth-child(1){
+	width : 290px;
+	height : 45px;
+	padding: 14px 0 0 15px;
+	margin : 0 2px; 
+	border : 1px solid rgb(194, 194, 194);
+	border-radius : 4px;
+}
+#div_top > div:nth-child(2) > form >  div:nth-child(1) > img {
+	margin-right: 5px;
+    margin-bottom: -2px;
+}
+#div_top > div:nth-child(2) > div:nth-child(2) > select {
+    width: 209px;
+    height: 46px;
+    padding: 4px 70px 0 42px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 4px;
+}
+#div_top > div:nth-child(2) > div:nth-child(2) > img {
+	margin-right: 5px;
+    margin-bottom: -2px;
+    position: absolute;
+    top: 236px;
+    left: 957px;
+}
+#tour_date_hide {
+	width: 720px;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    position: absolute;
+    top: 234px;
+    left: 820px;
+}
+#tour_date_hide > img {
+	width : 100%;
+} 
+#tour_date_hide #input_start_date { display: none; }
+#tour_date_hide #input_end_date { display: none; }
+#tour_date_hide > div:nth-child(2) > div {
+	font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    background-color: #f7f7f7;
+    padding: 24px 30px;
+    text-align: left;
+} 
+#tour_date_hide > div:nth-child(2) > div >  button {
+	border-radius: 4px;
+	height: 42px !important;
+	width: 100px;
+	margin-top: -7px;
+	color: #fff !important;
+    border: solid 1px #5e2bb8 !important;
+    background-color: #5e2bb8 !important;
+    text-align: center !important;
+} 
+#div_content {
+	width : 1200px;
+}
+
+
+#div_filter {
+    width: 240px;
+    height: 2226px;
+}
+
+#div_filter > #filter_box {
+    width: 240px;
+    height: 106px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) button {
+    width: 48px;
+    height: 50px;
+    border: 1px solid rgb(94, 43, 184);
+    border-radius: 8px 0 8px 8px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) img {
+    width: 48px;
+    height: 50px;
+    border-radius: 8px 0 8px 8px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) div {
+    color: rgb(94, 43, 184);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+#div_filter > #filter_box > div:nth-child(1) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(3) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(4) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > div:nth-child(2) {
+    width: 240px;
+    height: 49px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgb(102, 102, 102);
+    background-color: rgb(247, 247, 247);
+}
+
+#div_filter > div:nth-child(2) > div {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding: 12px 10px 10px 10px;
+}
+#div_filter {
+    width: 240px;
+    height: 2226px;
+}
+
+#div_filter > #filter_box {
+    width: 240px;
+    height: 106px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) button {
+    width: 48px;
+    height: 50px;
+    border: 1px solid rgb(94, 43, 184);
+    border-radius: 8px 0 8px 8px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) img {
+    width: 48px;
+    height: 50px;
+    border-radius: 8px 0 8px 8px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) div {
+    color: rgb(94, 43, 184);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+#div_filter > #filter_box > div:nth-child(1) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(3) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(4) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > div:nth-child(2) {
+    width: 240px;
+    height: 49px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgb(102, 102, 102);
+    background-color: rgb(247, 247, 247);
+}
+
+#div_filter > div:nth-child(2) > div {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding: 12px 10px 10px 10px;
+}
+#div_filter {
+    width: 240px;
+    height: 2226px;
+}
+
+#div_filter > #filter_box {
+    width: 240px;
+    height: 106px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px 0;
+    margin-right: 11px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) button {
+    width: 48px;
+    height: 50px;
+    border: 1px solid rgb(94, 43, 184);
+    border-radius: 8px 0 8px 8px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) img {
+    width: 48px;
+    height: 50px;
+    border-radius: 8px 0 8px 8px;
+    padding: 8px;
+}
+
+#div_filter > #filter_box > div:nth-child(-n+4) div {
+    color: rgb(94, 43, 184);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+#div_filter > #filter_box > div:nth-child(1) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(3) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > #filter_box > div:nth-child(4) > div:nth-child(2) {
+    margin-top: 5px;
+}
+
+#div_filter > div:nth-child(2) {
+    width: 240px;
+    height: 49px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgb(102, 102, 102);
+    background-color: rgb(247, 247, 247);
+}
+
+#div_filter > div:nth-child(2) > div {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding: 12px 10px 10px 10px;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: static; /* summary의 위치를 고정 */
+}
+summary {
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+}
+
+/*투어조건*/
+#div-tour {
+  	position: relative;
+    border-top: 1px solid rgb(102, 102, 102);
+
+}
+#div-tour > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_tour > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	width : 100px;
+}
+#div-tour > details > summary > div > img {
+	position: absolute;
+	right: 5px;
+    margin-top: -12px;
+}
+.black_v {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+    text-indent: -9999px;
+    background-position: -162px -30px;
+}
+#div-tour > details > div:nth-child(2) > div >  button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin : 3px 3px 0 0;
+	background-color : white;
+}
+#div-tour > details > div:nth-child(2) {
+	margin-bottom : 5px;
+}
+
+/*프로모션*/
+#div_promotion {
+    position: relative;
+    border-top: 1px solid rgb(102, 102, 102);
+}
+#div_promotion > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_promotion > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_promotion > details > summary > div > img {
+	position: absolute;
+	right: 5px;
+    margin-top: -12px;
+}
+#div_promotion > details > div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_promotion > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*호텔*/
+#div_hotel {
+	width :240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_hotel> details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_hotel > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_hotel > details > summary > div > img {
+	position: absolute;
+	right: 5px;
+    margin-top: -12px;
+}
+#div_hotel > details > div:nth-child(2) >button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_hotel > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*항공사*/
+#div_flight {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_flight > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_flight > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_flight > details > summary > div > img {
+	position: absolute;
+	right: 5px;
+    margin-top: -12px;
+}
+#div_flight > details > div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_flight > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*출발시간*/
+#div_departure_time {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_departure_time > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_departure_time > details > summary > div  > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_departure_time > details > summary > div  > img {
+	position: absolute;
+	right: 5px;
+    margin-top: -12px;
+}
+#div_departure_time > details > div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_departure_time > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*출발요일*/
+#div_departure_date {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_departure_date > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_departure_date > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_departure_date > details > div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_departure_date > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*어떤 여행을 원하세요*/
+#div_type {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_type > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_type > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_type > details > div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_type > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*누구와 떠나세요*/
+#div_who {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_who > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : auto;
+	padding : 25px 0 16px 0;
+}
+#div_who > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_who > details >  div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_who > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*상품브랜드*/
+#div_brand {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_brand > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_brand > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	
+}
+#div_brand > details > div > button:not(:last-child) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_brand > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*예산*/
+#div_money {
+	width : 240px;
+	height : auto;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+#div_money > details > summary > div {
+	position: relative;
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+}
+#div_money > details > summary > div > div {
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+}
+#div_money > details > div > button:nth-child(1),
+#div_money > details > div > button:nth-child(2),
+#div_money > details > div > button:nth-child(3),
+#div_money > details > div > button:nth-child(4) {
+	border : 1px solid rgb(102, 102, 102);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	background-color : white;
+}
+#div_money > details > div > button:nth-child(5){
+	border : 1px solid rgb(105, 110, 125);
+	padding : 7px 10px;
+	border-radius : 3px;
+	font-size : 13px;
+	font-weight : 400;
+	height : 31.3333px;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	color : white;
+	background-color : rgb(105, 110, 125);
+}
+#div_money > details > div > div {
+	margin-bottom : 5px;
+}
+
+/*검색내 검색결과*/
+#div_search_in_search {
+	width : 240px;
+	height : 104px;
+	border-top : 1px solid rgb(102, 102, 102);
+	position : relative;
+}
+#div_search_in_search > div:nth-child(1) {
+	width : 240px;
+	height : 56px;
+	padding : 25px 0 16px 0;
+	color : rgb(17, 17, 17);
+	font-size : 15px;
+	font-weight : 600;
+	letter-spacing : -0.4px;
+	width: 200px;
+}
+#div_search_in_search > div:nth-child(2) > input {
+	position : relateive;
+	width : 238px;
+	height : 44px;
+	border : 1px solid rgb(205, 205, 205);
+	padding: 17px 10px;
+	border-radius : 2px;
+	font-size : 14px;
+	font-weight : 400;
+	letter-spacing : -0.4px;
+	margin: 7px 3px 0 0;
+	position : absolute;
+	color : rgb(51, 51, 51);
+}
+#div_search_in_search > div:nth-child(2) > div > img {
+	position : absolute;
+	margin-top: 23px;
+    margin-left: -30px;
+}
+
+
+#div_category {
+	width : 900px;
+	height : auto;
+	margin-left : 55px;	
+}
+#div_category > #div_country_check {
+	width : 900px;
+	height : 56px;
+	margin : 0 0 20px 0;
+	padding : 18px 0 15px 291px;
+	background-color : rgb(245, 245, 245);
+	font-size : 18px;
+	font-weight : 400;
+	justify-content : center;
+	letter-spacing : -0.4px;
+}
+#div_category > #div_country_check > div:nth-child(1) > img {
+	width : 32px;
+	height : 20px;
+}
+#div_category > #div_filter_four {
+	width : 900px;
+	height : 40px;
+	margin-bottom : 30px;
+}
+#div_category > #div_filter_four > div:nth-child(1) {
+	width : 17px;
+	height : 30px;
+	margin-top : 5px;
+	margin-right : 10px;
+}
+#div_category > #div_filter_four > div:nth-child(2) {
+	font-size : 18px;
+	font-weight : 400;
+	height : 30px;
+	letter-spacing : -0.4px;
+	margin-top : 5px;
+}
+#div_category > #div_filter_four > div:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+    background-color: rgb(94, 43, 184);
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    padding: 6px 0 0 8px;
+    margin-top : 2px;
+}
+#div_category > #div_filter_four > div:nth-child(4),
+#div_category > #div_filter_four > div:nth-child(5),
+#div_category > #div_filter_four > div:nth-child(6),
+#div_category > #div_filter_four > div:nth-child(7) {
+	height : 32px;
+	padding : 9px 10px 10px 10px;
+	margin-right : 4px;
+	margin-bottom : 4px;
+	background-color : rgb(238, 240, 243);
+	border-radius : 4px;
+}
+#div_category > #div_filter_four > div:nth-child(4) {
+	margin-left: 16px;
+}
+#div_category > #div_filter_four > div:nth-child(8) {
+	width : 90px;
+	height : 32px;
+	padding : 9px 10px 10px 10px;
+	margin-right : 4px;
+	margin-bottom : 4px;
+	border : 1px solid rgb(102, 102, 102);
+	border-radius : 4px;
+	font-size : 12px;
+	font-weight : 400;
+	height : 32px;
+	letter-spacing : -0.4px; 
+}
+#div_category > #div_filter_four > div:nth-child(8) > div:nth-child(1) {
+    margin-right: 5px;	
+}
+#div_category > #div_filter_wrap {
+	width : 900px;
+	height : 36px;
+	padding : 0 0 20px 0;
+}
+#div_category > #div_filter_wrap > div:nth-child(1) {
+	font-size : 15px;
+	font-weight : 600;
+	height : 15px;
+	letter-spacing : -0.4px;
+}
+#div_category > #div_filter_wrap > div:nth-child(1) > span {
+	color : rgb(94, 43, 184);
+}
+#div_category > #div_filter_wrap > form > button {
+	font-size: 14px;
+    font-weight: 400;
+    height: 14px;
+    letter-spacing: -0.4px;
+    border: 0;
+    background-color: white;
+}
+#div_category > #div_filter_wrap > div:nth-child(6) {
+	color : rgb(94, 43, 184); 
+}
+#row_calender2 { display: none; }
+.div_small_category {
+	width : 900px;
+	height : 260px;
+	padding-top : 30px;
+	border-top : 1px solid rgb(102, 102, 102);
+}
+.div_small_category > div:nth-child(1) > div > img{
+	width : 200px;
+	height : 200px;
+}
+.div_small_category > div:nth-child(2) {
+	width : 466px;
+	height : 200px;
+	margin-left: 20px;
+}
+.package_tag {
+	border : 1px solid rgb(91, 105, 156);
+	font-size :12px;
+	font-weight : 400;
+	height : 19px;
+	letter-spacing : -0.4px;
+	width : 44px;
+	padding: 2px 6px 0 6px;
+	color : rgb(91, 105, 156);
+	margin-right : 10px;
+}
+.departure_tag {
+	border : 1px solid rgb(91, 105, 156);
+	font-size :12px;
+	font-weight : 400;
+	height : 19px;
+	letter-spacing : -0.4px;
+	padding: 2px 6px 0 6px;
+	color : white;
+	background-color : rgb(91, 105, 156);
+	margin-right : 10px;
+}
+.hannapack_tag {
+	border : 1px solid rgb(94, 43, 184);
+	font-size :12px;
+	font-weight : 400;
+	height : 19px;
+	letter-spacing : -0.4px;
+	width : 63px;
+	padding: 2px 6px 0 6px;
+	color : rgb(94, 43, 184);
+	background-color : white;
+	margin-right : 10px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+	width : 466px;
+	margin-top : 8px;
+	font-size : 18px;
+	font-weight : 500;
+	letter-spacing : -0.4px;
+	line-height : 28px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+	width : 466px;
+	margin-top : 4px;
+	font-size : 13px;;
+	font-weight : 500;
+	letter-spacing : -0.4px;
+	line-height : 18px;
+	margin-bottom : 8px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > img {
+	width : 12px;
+	height : 12px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div {
+	margin-left : 3px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > img {
+	width : 12px;
+	height : 12px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+	margin-top : 7px;
+	margin-bottom : 10px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div {
+	margin-left : 3px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > img{
+	width : 12px;
+	height : 12px;
+}
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(2),
+.div_small_category > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(3) {
+	margin-left : 3px;
+}
+.bottom_tag {
+	margin-left : 5px;
+	background-color : rgb(247, 247, 247);
+	border : 1px solid rgb(247, 247, 247);
+	color :  rgb(102, 102, 102);
+	font-size : 13px;
+	font-weight : 400;
+	letter-spacing : -0.8px;
+}
+.div_small_category > div:nth-child(3) {
+	width : 190px;
+	height : 200px;
+	margin-left: 20px;
+	border-left : 1px solid rgb(102, 102, 102); 
+}
+.div_small_category > div:nth-child(3) > div:nth-child(1) {
+	font-size: 17px; 
+    font-weight: 400;
+    padding-left : 25px;
+    padding-top : 11px;
+}
+.div_small_category > div:nth-child(3) > div:nth-child(1) > span {
+	font-size: 22px;
+    color: #111;
+}
+.div_small_category > div:nth-child(3) > div:nth-child(2) {
+    width: 155px;
+    height: 46px;
+    padding: 14px 7px 0 38px;;
+    border: 1px solid rgb(94, 43, 184);
+    border-radius: 4px;
+    margin-top: 107px;
+    margin-left: 22px;
+}
+.div_small_category > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+	color : rgb(94, 43, 184);
+	font-size : 15px;
+	font-weight : 400;
+	letter-spacing : -0.4px;
+	 postition : relative;
+}
+
+.div_small_category > div:nth-child(3) > div:nth-child(2) > img {
+	position : absolute;
+	margin-top: 6px;
+	margin-left: 16px;
+}
+.product_hide {
+	width: 100%;
+    padding: 30px;
+    border-top: 1px solid #eaeaea;
+    background: #f2f4f7;
+}
+.big_black_left_arrow {
+	background: url(https://image.hanatour.com/usr/static/img2/pc/com/icon_arrowright_32_black@3x.png) 50% / 100% !important;
+	width: 24px;
+    height: 24px;
+    margin: 4px 30px 0;
+    display: inline-block;
+    content: '';
+}
+.big_black_right_arrow {
+	background: url(https://image.hanatour.com/usr/static/img2/pc/com/icon_arrowright_32_black@3x.png) 50% / 100% !important;
+    transform: rotate(180deg);
+    width: 24px;
+    height: 24px;
+    margin: 4px 30px 0;
+    display: inline-block;
+    content: '';
+}
+.product_hide > div:nth-child(1) > div:nth-child(1) {
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.5;
+}
+.product_hide > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) {
+	margin-top : -5px;
+}
+.product_hide > div:nth-child(1) > div:nth-child(2) {
+	position: relative;
+    min-height: 124px;
+    margin-top: 25px;
+    border: solid 1px #eaeaea;
+    border-top: none;
+    background-color: #ffffff;
+    text-align: center;
+	
+} 
+.product_hide > div:nth-child(2) {
+	margin-top : 30px;
+}
+.product_hide > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+
+.small_right_arrow {
+	display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+	background-position: -225px -52px;
+	width: 7px;
+    height: 12px;
+    margin-top: 9px;
+    margin-right: 20px;
+    
+}
+
+.small_left_arrow {
+	display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+	background-position: -225px -52px;
+	transform: rotate(180deg);
+	width: 7px;
+    height: 12px;
+    margin-top: 9px;
+    margin-left: -10px;
+}
+
+
+
+.cal_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 78px;
+}
+.show_date {
+    width: 300px;
+    text-align: center;
+    line-height: 1;
+}
+.row_calender .days, .row_calender .dates {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 0px 0 0 15px;
+}
+#row_calender2 {
+	position: relative;
+    min-height: 124px;
+    margin-top: 25px;
+    border: solid 1px #eaeaea;
+    border-top: none;
+    background-color: #ffffff;
+    text-align: center;
+}
+.row_calender .day, .row_calender .date {
+   	/* display: flex; */
+    width: calc(100% / 17);
+    color: #999;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 36px;
+}
+/*.current.today {
+	background: rgb(242 242 242);
+}*/
+.dates .today {
+	background-color: #5e2bb8;
+	width: 36px !important;
+    height: 36px !important;
+    border-radius: 18px !important;
+    margin-right: 13px;
+    color: white;
+    font-weight: 900;
+}
+.row_calender .dates {
+    /* display: flex; */
+    
+}
+.row_calender .day.sat, .row_calender .date.sat {   /* :nth-child(7n -1) */
+    color: #3c6ffa;
+}
+.row_calender .day.sun, .row_calender .date.sun {   /* :nth-child(7n) */
+    color: #ed2a61;
+}
+n.row_calender .day.disable {
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+.cont-select {
+  position: relative;
+  width: 200px;
+  margin-right: -45px;
+}
+
+.btn-select {
+  width: 75%;
+  padding: 13px 30px 13px 14px;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  /* 말줄임 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn-select:hover,
+.btn-select:focus {
+  border: 1px solid #5e2bb8;
+}
+
+.list-member {
+  list-style-type : none;
+  display: none;
+  position: absolute;
+  width: 75%;
+  top: 35px;
+  left: 0;
+  padding: 0;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.btn-select.on+.list-member {
+  display: block;
+}
+
+.list-member li {
+  width: 100%;
+  height: 40px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+}
+
+.list-member li button {
+  width: 100%;
+  padding: 7px 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  /* 말줄임 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list-member li button:hover,
+.list-member li button:focus {
+  color: #5e2bb8;
+}
+
+.small_product_box {
+	padding: 0 30px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 756px;
+    margin-top : 20px;
+}
+.small_calender_logo {
+	width: 14px;
+    height: 14px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ic_calendar_line_14.png) no-repeat 0 0 / 14px;
+    margin-left: 4px;
+    display : inline-block;
+}
+.one_arrow_img {
+	width: 14px;
+    height: 14px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ico_air_time.png) no-repeat 0 0 / 14px;
+    margin-top: -7px;
+    display : inline-block;
+}
+.write_img {
+	background: url(https://image.hanatour.com/usr/static/img2/pc/com/ic_note.png) no-repeat 0 0 / 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display : inline-block;
+    width: 16px;
+    height: 16px;
+}
+.small_product_box > div {
+	padding : 20px;
+	border-bottom: 1px solid #ddd;
+}
+.small_product_box > div > div:nth-child(1) {
+	margin: 15px 0 20px;
+	font-size: 17px;
+    font-weight: 600;
+    line-height: 27px;
+}
+.small_product_box > div > div:nth-child(1) > div:nth-child(1) {
+	width : 490px;
+}
+.small_product_box > div > div:nth-child(1) > div:nth-child(2) > span {
+	font-size: 22px;
+}
+.small_product_box > div > div:nth-child(2) {
+	margin-top : 5px;
+}
+.small_product_box > div > div:nth-child(2) > img {
+    height: 16px;
+	margin-right : 10px;
+	margin-left: 10px;
+}
+.small_product_box > div > div:nth-child(3) {
+	margin-top : 5px;
+}
+.small_product_box > div > div:nth-child(3) > span {
+	margin-right: 3px;
+	margin-left: 10px;
+}
+.small_product_box > div > div:nth-child(4) {
+	margin-top : 5px;
+	
+}
+.small_product_box > div > div:nth-child(5) {
+	margin-right: -10px;
+}
+.compare_button {
+	background-color :  white;
+	padding: 0;
+    height : 36px;
+    width: 126px;
+    margin-right : 5px;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    cursor : pointer;
+}
+.small_product_box > div > div:nth-child(5) > form > button {
+	padding: 0;
+    height: 36px;
+    width: 126px;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    cursor : pointer;
+}
+
+
+/*상품비교함*/
+#compare_wrap {
+    position: fixed;
+   	left: 0;
+   	right: 0;
+   	bottom: 0;  /* -332px; */
+    height: 332px;
+    border-top: 2px solid #5b6070;
+    background: #f2f4f7;
+    box-shadow: 0px 10px 10px 8px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+ 	transition: bottom 0.7s ease 0s;
+ 	padding: 25px 248px 0px;
+
+}
+#compare_wrap.hide {
+	bottom: -332px;
+}
+#compare_wrap .v {
+	position: absolute;
+    right: 14px;
+    top: 28px;
+  	background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+	background-position-x: -222px;
+	background-position-y: -39px;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 7px;
+    transition: transform 0.7s;
+}
+#compare_wrap:NOT(.hide) .v {
+	transform: rotate(180deg);
+}
+#compare_box {
+    /* position: fixed; */
+    position: absolute;
+    top: -50px;
+    left: 250px;
+    width: 180px;
+    height: 50px;
+    background-color: #5e2bb8;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 18px;
+    cursor: pointer;
+ }
+ #compare_box > div > button {
+ 	background-color : #5e2bb8;
+ 	border : 1px solid #5e2bb8;
+ 	/* left: 250px; */
+    width: 180px;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+ }
+ 
+ /*상품비교함 패키지 나열*/
+#compare_item_area {
+	width : 1200px;
+	height : 190px;
+	padding : 20px 0 0 10px;
+}
+#compare_content > div:nth-child(1) {
+	font-size: 17px;
+}
+#compare_content > div:nth-child(2) {
+	margin-top: 10px;
+	font-size: 14px;
+}
+#compare_content > div:nth-child(3) {
+	margin-top: -31px;
+}
+#compare_content > div:nth-child(3) > button:nth-child(1) {
+	min-width: 110px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    padding: 0 20px;
+    background-color : white;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+}
+#compare_content > div:nth-child(3) > button:nth-child(1) > span {
+	background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 14px;
+    height: 14px;
+    margin: -2px 5px 0 0;
+    background-position: -134px -30px;
+    vertical-align: middle;
+}
+#compare_content > div:nth-child(3) > button:nth-child(2) {
+    background-color: #5e2bb8;
+    margin-left: 5px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 4px;
+    border: solid 1px #5e2bb8;
+    
+}
+#compare_content > div:nth-child(3) > button:nth-child(2):hover {
+	border: 1px solid #43109f;
+	background-color : #43109f;
+}
+
+/*비교상품이 있을 때*/
+.compare_item {
+	position: relative;
+    display: inline-block;
+    width: 384px;
+    height: 170px;
+    margin-left: 10px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color : #fff;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+    cursor: pointer;
+}
+.compare_item > div:nth-child(2) {
+	margin-bottom: 6px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.right-arrow {
+	width: 14px;
+    height: 14px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ico_air_time.png) no-repeat 0 0 / 14px;
+    margin-right: 5px;
+    margin-left: 5px;   
+}
+.compare_item > div:nth-child(3) > img{
+	width : 20px;
+	height : 14px;
+}
+.compare_item > div:nth-child(4) {
+	margin-top : 5px;
+} 
+.compare_item > div:nth-child(5) {
+	margin-top : 8px;
+	font-size: 17px;
+}
+.compare_item > div:nth-child(5) > span {
+	font-size: 22px;
+    font-weight: 400;
+}
+.compare_item > button {
+	border: 0;
+    background-color: white;
+    font-size: 22px;
+    width: 20px;
+    height: 20px;
+    background-position: -252px -52px;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    margin-right: -9px;
+}
+
+/*비교상품이 없을 때*/
+.no_compare_item {
+	cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 384px;
+    height: 170px;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    vertical-align: top;
+    padding: 62px;
+    border: 1px dashed #ccc;
+    background: #f2f4f7;
+}
+.no_compare_item > div {
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*상품비교함 내부*/
+#compare_in {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	width: 1200px;
+	height: 800px;	
+	z-index: 5;
+}
+#div_fullscreen_grey {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 4;
+}
+#compare_in > div:nth-child(1) {
+	width : 1120px;
+	height: 84px;
+	margin : 0 40px;
+	padding : 40px 0 20px;
+	border-bottom : 2px solid black;
+}
+#compare_in > div:nth-child(1) >div:nth-child(1) {
+	font-size: 22px;
+}
+#compare_in > div:nth-child(1) >div:nth-child(2) {
+	width : 200px;
+}
+#compare_in > div:nth-child(1) >div:nth-child(2) > button:nth-child(2) {
+	height: 36px;
+    min-width: 110px;
+    font-size: 13px;
+    line-height: 34px;
+    color: #666;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    cursor : pointer;
+}
+#compare_in > div:nth-child(1) >div:nth-child(2) > button:nth-child(1) {
+	background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 26px;
+    height: 26px;
+    background-position: 0 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 0;
+    margin-left: 20px;
+}
+.print {
+	width: 14px;
+    height: 14px;
+    margin: -3px 4px 0 0;
+    background-position: -193px 0;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    display: inline-block;
+    content: '';
+}
+
+/*내용의 기준(제목)*/
+#compare_in_content {
+	padding: 0 23px  40px 40px;
+	overflow:scroll;
+	height: 716px;
+}
+#compare_in_content > table {
+	border-spacing: 0px;
+	table-layout: fixed;
+}
+#compare_in_content > table tr > th:first-child {
+	width: 210px;
+}
+table.compare1 tr > th:nth-child(2) { 
+	width: 910px;  /* 910px; */
+}
+table.compare2 tr > th:nth-child(2),
+table.compare2 tr > th:nth-child(3) { 
+	width: 455px;	
+}
+table.compare3 tr > th:nth-child(2),
+table.compare3 tr > th:nth-child(3),
+table.compare3 tr > th:nth-child(4) { 
+	width: 303px;
+}
+
+#grey_blank {
+	background: #f7f7f7;
+	border : 1px solid #ddd;
+	border-left : 0;
+}
+/* .compare3 #grey_blank{
+	width:213px;
+}
+.compare2 #grey_blank{
+	width:213px;
+}
+.compare1 #grey_blank{
+	width:213px;
+} */
+
+.compare_top {
+	padding: 20px;
+	background: #f7f7f7;
+	border : 1px solid #ddd;
+	border-right: 0;
+}
+.compare_top > img {
+    margin: 0 auto;
+    object-fit: cover;
+}
+.compare3 .compare_top > img {
+	width: 261px;
+	height : 210px;
+}
+.compare2 .compare_top > img {
+	width: 280px;
+	height : 210px;
+}
+.compare1 .compare_top > img {
+	width: 280px;
+	height : 210px;
+}
+
+.compare_top > div:nth-child(2) {
+	margin-top: 8px;
+	font-size: 15px;
+    color: #111;
+    font-weight: 600;
+    display: -webkit-box !important;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+.compare_top > div:nth-child(3) {
+	font-size: 13px;
+    display: block;
+    color: #666;
+    margin-top: 40px;
+    text-align: end;
+}
+.compare_top > div:nth-child(4) {
+	font-size: 17px;
+    font-weight: 400;
+    text-align: end;
+}
+.compare_top > div:nth-child(4) > span {
+	font-size: 22px;
+    color: #111;
+}
+
+.compare_top > div:nth-child(5) > button:nth-child(1) {
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+}
+.compare3 .compare_top > div:nth-child(5) > button {
+	min-width: 110px;
+}
+.compare2 .compare_top > div:nth-child(5) > button {
+	min-width: 180px;
+}
+.compare1 .compare_top > div:nth-child(5) > button {
+	min-width: 286px;
+}
+
+.compare_top > div:nth-child(5) > button:nth-child(2) {
+	margin: 10px 0 0 0;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    color: #fff !important;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/*일정요약*/
+#compare_schedule > th {
+	border : 1px solid #ddd;
+	border-left : 0;
+}
+#compare_schedule > td {
+	padding : 15px 20px;
+	border : 1px solid #ddd;
+	border-right : 0;
+}
+.compare_day > div:nth-child(1) {
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+.compare_day > div:nth-child(2) {
+	margin-bottom: 10px;
+}
+.compare_day > div:nth-child(3) {
+	margin-top: 14px;
+    padding: 12px 14px 13px 12px;
+    display: flex;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    align-items: center; 
+}
+.compare_day > div:nth-child(3) > div:nth-child(1) {
+	width: 165px;
+} 
+.compare_schedule_notice {
+	color: #666;
+	margin-top: 10px !important;
+}
+#compare_schedule > td > button {
+	min-width: -webkit-fill-available;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    margin-top: 30px;
+}
+#compare_schedule > td > button:hover {
+	border : 1px solid #5e2bb8;
+	color : #5e2bb8;
+}
+.schedule_container {
+    display: flex;
+    align-items: center;
+}
+.schedule_label {
+    flex: 0 0 65px;
+}
+.schedule_content {
+    flex: 1;
+}
+
+/*후기 요약*/
+th {
+	border : 1px solid #ddd;
+	border-left : 0;
+}
+#review_content > td {
+	border : 1px solid #ddd;
+	border-left : 0;
+	padding : 15px 20px;
+	line-height: 1.5;
+}
+
+/*예약현황*/
+#reservation_content > td {
+	border : 1px solid #ddd;
+	border-left : 0;
+	padding : 15px 20px;
+	color: #666;
+}
+/*일정*/
+.colspan {
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+    border-left: 0;
+    height: 50px;
+}
+.colspan > th {
+	padding: 15px 20px;
+	border-top: 1px solid black;
+}
+/*출발일*/
+#departure_content > td {
+	border : 1px solid #ddd;
+	border-left : 0;
+	padding : 15px 20px;
+	line-height: 1.5;
+	color: #666;
+}
+/*td 공통 적용*/
+.schedule_td {
+	border : 1px solid #ddd;
+	border-left : 0;
+	padding : 15px 20px;
+	line-height: 1.5;
+	color: #666;
+	position: relative;
+}
+
+/*파란 동그라미 이미지*/
+.blue_circle_img {
+	background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pkg/spr_pkg.png);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: -162px 0;
+    position : absolute;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+.purple_x_img {
+	width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: -182px 0;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pkg/spr_pkg.png);
+    position : absolute;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+#shopping_times > td > div {
+	margin-left : 10px;
+}
+#guide_tf > td > div {
+	margin-left : 10px;
+}
+#leader_tf > td > div {
+	margin-left : 10px;
+}
+
+/*포함내역*/
+.additional_info {
+	margin-bottom: 15px;
+}
+.additional_info > div {
+	font-size: 14px;
+    line-height: 23px;
+}
+.blue_o_img {
+	background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pkg/spr_pkg.png);
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-position: -162px 0;
+    margin-top: 16px;
+    margin-left: 95px;
+    margin-bottom: 10px;
+}
+.purple_no_img {
+	width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: -182px 0;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pkg/spr_pkg.png);
+    position : relative;
+    margin-top: 16px;
+    margin-left: 95px;
+    margin-bottom: 10px;
+}
+.green_check_img {
+	width: 18px;
+    height: 18px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-position: -202px 0;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/pkg/spr_pkg.png);
+    margin-top: 16px;
+    margin-left: 95px;
+    margin-bottom: 10px;
+}
+
+/*불포함 내역*/
+#no_contain > td > div > div:nth-child(3) {
+	margin-top : 15px;
+}
+.compare_two {
+	display : block;
+}

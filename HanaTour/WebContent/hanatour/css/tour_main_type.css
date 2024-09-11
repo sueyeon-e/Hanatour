@@ -1,0 +1,763 @@
+
+/* type1 */
+.type1 {
+    position: relative;
+}
+.type1_img.swiper {
+	width: 1920px; 
+	height: 600px;
+}
+.type1_img.swiper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*검색상자*/
+#tour_search_box {
+	width: 1200px;
+    height: 143px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding : 20px 30px;
+    background-color : white;
+    border : 0;
+    z-index: 1;
+}
+#tour_search_box > div > div:nth-child(1) > input {
+	width : 298px;
+	height : 62px;
+	padding : 0 15px 0 20px;
+	border-radius: 4px;
+	background: #f2f6f9;
+    font-size: 16px;
+    line-height: 60px;
+    color: #888;
+    border : 0;
+}
+.grey_x_img {
+	background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: -122px -39px;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    font-size: 1px;
+    overflow: hidden;    
+}
+#where_hide {
+    position: absolute;
+    left: 30px;
+    top: 91px;
+    background-color: white;
+    width: 695px;
+    padding: 30px 28px 0;
+    z-index: 5;
+    border: 1px solid black;
+}
+#where_hide > div:nth-child(1) {
+	margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 12px !important;
+}
+#where_hide > div:nth-child(2) > div {
+	width : 303px;
+	padding: 6px 10px 6px 0;
+	margin-right : 15px;
+} 
+#where_hide > div:nth-child(3) {
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 14px;
+    letter-spacing: normal;
+    padding-top: 14px;
+} 
+
+#tour_search_box > div > div:nth-child(2) {
+	margin-left : 15px;
+}
+#tour_search_box > div > div:nth-child(2) > select {
+	width : 228px;
+	height : 62px;
+	padding : 0 20px;
+	font-size: 16px;
+    color: #333;
+    line-height: 62px;
+    border-radius: 4px;
+	background: #f2f6f9;
+	border : 0;
+}
+#tour_search_box > div > div:nth-child(2) > select: hover {
+	border-color: #5e2bb8 !important;
+}
+.dot {
+	width: 14px;
+    height: 14px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png) no-repeat -135px 0;
+    position: absolute;
+    vertical-align: middle;
+    left: 20px;
+    top: 24px;
+}
+#tour_search_box > div > div:nth-child(2) > select > option {
+	width : 228px;
+	height : 34px;
+	padding : 0 15px;
+} 
+#start_date_result {
+	width: 73px;
+    background: #f2f6f9;
+    border: 0;
+} 
+#end_date_result {
+	width: 73px;
+    background: #f2f6f9;
+    border: 0;
+} 
+
+#tour_date_hide {
+	width: 720px;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    position: absolute;
+    top: 91px;
+    left: 223px;
+}
+#tour_date_hide > img {
+	width : 100%;
+} 
+#tour_date_hide > div:nth-child(2) > div {
+	font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    background-color: #f7f7f7;
+    padding: 24px 30px;
+    text-align: left;
+} 
+#tour_date_hide > div:nth-child(2) > div > div:nth-child(3) {
+	border-radius: 4px;
+	height: 42px !important;
+	width: 100px;
+	margin-top: -7px;
+	color: #fff !important;
+    border: solid 1px #5e2bb8 !important;
+    background-color: #5e2bb8 !important;
+    text-align: center !important;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+#tour_search_box > div >div:nth-child(3) > div > button {
+	width : 360px; 
+	height : 62px;
+	padding : 0 20px;
+	background: #f2f6f9;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border : 0;
+    text-align: center;
+}
+#tour_search_box > div >div:nth-child(3) > div:child(1) > div {
+	width : 14px;
+	height : 14px;
+	position: absolute;
+    margin-top: 23px;
+    margin-left: 35px;
+}
+#tour_search_box > div >div:nth-child(4) > button {
+	width : 209px;
+	height : 62px;
+	margin-right : 10px;
+	padding : 0 10px;
+	background: #f44e66;
+	border-radius: 8px 0 8px 8px;
+    background: #ee006b;
+    color: #fff !important;
+    margin-left: 10px;
+    border : 0;
+}
+.calender_img {
+	position: absolute;
+    top: 43px;
+    left: 610px;
+	width: 14px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    background-position: -135px -18px;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+}
+#tour_search_box > div:nth-child(2) {
+	margin-top : 10px;
+}
+#tour_search_box > div:nth-child(2) > div > div:nth-child(1) {
+	margin-right : 10px;
+}
+
+/*check-box 버튼 바꾸는 방법*/
+input.check_btn {
+  display: none;
+}
+input.check_btn + label {
+  cursor: pointer;
+}
+
+input.check_btn + label > span {
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+/* label:before에 체크하기 전 상태 CSS */
+input.check_btn + label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #888;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+/* label:before에 체크 된 상태 CSS */  
+input.check_btn:checked + label:before {
+  content: "";
+  background-color: #5e2bb8;;
+  border-color: #5e2bb8;;
+  background-image: url('check_btn.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/ico_check.png);
+}
+
+.type1 > div:nth-child(1) {
+    margin-left: -8px;
+}
+.type1_img {
+	transform: translateX(-6%);
+    -webkit-transform: translateX(-6%);
+}
+.type1_img_slider_btn {
+    border-top: 1px solid  rgb(129, 191, 236);;
+    border-bottom: 1px solid  rgb(129, 191, 236);;
+    width: 84px;
+    height: 30px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 43%;
+    left: 17.05%;
+    
+}
+.type1_img_slider_btn > div {
+    border-left: 1px solid rgb(129, 191, 236);
+    width: 28px;
+    height: 30px;
+}
+.type1_img_slider_btn > div:nth-child(3) {
+    border-right: 1px solid  rgb(129, 191, 236);
+}
+
+.type1_img_slider_btn > div > a > img {
+    width: 7px;
+    margin-left: 9px;
+    margin-top: 8px;
+    object-fit: contain;
+}
+
+.img_slider_number {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 29px;
+
+    position: absolute;
+    top: 43%;
+    left: 23.4%;
+}
+
+/* type2 */
+.type2 {
+    width: 100%;
+    height: 200px;
+}
+
+.type2_inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 97px;
+}
+
+.type2_inner > div:not(:last-child) {
+    width: 282px;
+    height: 150px;
+}
+
+.type2_inner > div:nth-child(2),
+.type2_inner > div:nth-child(3), 
+.type2_inner > div:nth-child(4)  {
+    margin-left: 24px;
+}
+
+
+.type2_inner > div:nth-child(1) {
+    position: relative;
+}
+
+.type2_control_top > div:nth-child(1) {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.type2_control_top > div:nth-child(2) {
+    color: rgb(102, 102, 102);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    text-decoration: underline;
+
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.type2_control_bottom {
+    height: 35px;
+    position: absolute;
+    bottom: 0%;
+}
+
+.type2_control_bottom > div {
+    width: 35px;
+    height: 35px;
+}
+
+.type2_control_bottom img {
+    width: 33px;
+    height: 33px;
+}
+
+.type2_control_bottom > div:nth-child(2) {
+    width: 52px;
+}
+.type2_control_bottom > div:nth-child(2) > div {
+    font-size: 14px;
+    font-weight: 400;
+    height: 35px;
+    left: 35px;
+    letter-spacing: -0.4px;
+    line-height: 35px;
+
+    text-align: center;
+}
+
+.type2_control_bottom > div:nth-child(1),
+.type2_control_bottom > div:nth-child(2),
+.type2_control_bottom > div:nth-child(3) {
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+}
+
+.type2_control_bottom > div:nth-child(3) {
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.type2_item {
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+}
+
+.type2_item {  
+    padding-left: 20px;
+    padding-top: 16px;
+}
+
+.type2_item > a {
+    font-size: 15px;
+    color: #111;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -.4px;
+
+}
+
+.type2_item_departure > div:nth-child(3) {
+    margin-left: 7px;
+}
+.type2_item_departure > div:nth-child(3) > img {
+    width: 14px;
+    height: 14px;
+}
+.type2_item_departure > div:nth-child(4) {
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.type2_item_departure > div:nth-child(4) > img {
+    width: 10px;
+    height: 10px;
+}
+
+
+.iata {
+    color: #5e2bb8;
+    margin-left: 5px;
+}
+
+
+.type2_item_date {
+    color: #111;
+    font-size: 13px;
+    margin-top: 7px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+
+.type2_item_setting {
+    color: #666;
+    font-size: 13px;
+    margin-top: 3px;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+/* type3 */
+.type3 {    
+    margin-top: 100px;
+}
+
+.type3_inner { 
+    width: 1200px;
+    height: 566px;
+    margin: 0 auto;
+    /* background-color: aliceblue; */
+
+    position: relative;
+}
+
+.type3_background_img {
+    width: 434px;
+    height: 566px;
+}
+
+.type3_contents {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+}
+.type3_contents_left {
+    width: 220px;
+}
+
+.type3_title {
+    color: rgb(255, 255, 255);
+    /* font-family: hnt-font; */
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+    line-height: 46.8px;
+}
+
+.type3_tab {
+    margin-top: 35px;
+}
+
+.type3_tab > div {
+    width: auto;
+    height: 36px;
+    background: #fff;
+    color: #252525;
+
+    border-color: #fff;
+    border-radius: 17px;
+
+    letter-spacing: -0.4px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+
+    padding: 7px 20px;
+    margin-top: 13px;
+
+    cursor: pointer;
+}
+
+.type3_tab > .type3_tab_active {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(37, 37, 37);
+}
+
+
+
+.type3_tab_active > .type3_tab_active {
+    display: block;
+}
+
+.type3_type8_container {
+    display: none;
+}
+
+
+.type3_tab_active > .type3_type8_container {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 1%;
+    left: 98%;
+}
+
+
+.type3_type8_container > .type8 {
+    height: 438px;
+
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 10px 0px;
+    margin-left: 24px;
+}
+
+
+
+.type3_type8_container > .type8 > a > div:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* type4 */
+.type4 {
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    height: 26px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+
+    margin-top: 100px;
+}
+
+.type4_inner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* type5 */
+
+.type5_inner {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.type5_subtitle {
+    margin-top: 10px;
+
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    line-height: 1.5;
+}
+
+/* type6 */
+.type6 {
+    margin-top: 150px;
+}
+.type6_inner {
+    margin: 0 auto;
+    width: 1200px;
+}
+.type6_img {
+    cursor: pointer;
+}
+
+/* type7 */
+.type7 { 
+    margin-top: 30px;
+}
+
+.type7_inner {
+    /* background-color: aliceblue; */
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.type7_item {
+    cursor: pointer;
+    position: relative;
+}
+
+
+.type7_img > img {
+    border-radius: 100%;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.type7_img > div {
+    
+}
+
+.type7_img > div > div:nth-child(1) { 
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin-left: -59px;
+}
+.type7_img > div > div:nth-child(2) {
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    text-align: center;
+    width: 185px;
+    margin-left: -26px;
+}
+
+/* type8 */
+
+.type8_container {
+    margin-top: 30px;
+}
+.type8_container_inner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 384px;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.type8 {
+    width: 282px;
+    height: 384px;
+}
+
+.type8 > a {
+    text-decoration: none;
+}
+
+.type8_img > img {
+    width: 282px;
+    height: 210px;
+}
+
+.type8_top_tag {
+    height: 19px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    line-height: 17px;
+    text-align: left;
+    font-size: 13px;
+    color: #6672a4;
+    margin-top: 15px;
+}
+
+.type8_title {
+    height: 54px;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #111;
+
+}
+
+.type8_bottom_tag {
+    height: 21px;
+    color: #333;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.type8_price {
+    height: 22px;
+    font-size: 22px;
+    color: #111;
+    line-height: 1;
+    letter-spacing: -.4px;
+    margin-top: 18px;
+}
+
+.type8_price > span:nth-child(2) {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+/* type9 */
+
+.type9 { 
+    margin-top: 30px;
+}
+.type9_inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.type9_tab {
+    display: flex;
+    /* justify-content: space-between */
+}
+.type9_tab > div {
+    width: 198px;
+    height: 51px;
+    text-align: center;
+
+    color: #333;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: -.4px;
+
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.type9_inner > .type9_tab > .type9_tab_active {
+    background-color: white;
+    color: rgb(138, 43, 226);
+    border : 1px solid black;
+    border-bottom : 0;
+}
+
+.type9_type8_container {
+    margin-top: 30px;
+}
+.type9_type8_container > .type9_tab_active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type9_type8_innner {
+    display: none;
+}

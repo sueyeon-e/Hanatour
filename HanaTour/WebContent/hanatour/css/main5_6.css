@@ -1,0 +1,311 @@
+.airplane_seat_select_inner{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid;
+    margin-top: 20px;
+    background-color: #eee;
+    text-align: ce;
+    padding: 40px 100px;
+}
+
+
+
+
+
+.airplane_seat_select_header1 {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.airplane_seat_select_header1 > div:not(:nth-child(1)) > span:nth-child(1) {
+    color: rgb(94, 43, 184);
+}
+
+
+.airplane_seat_select_header3 {
+    list-style-type: disc;
+}
+
+.airplane_seat_select_header4 {
+    text-align: center;
+}
+
+
+.airplane_seat_select_header4 {
+    cursor: pointer;
+    margin-top: 15px;
+    color: white;
+    font-weight: 500;
+    background-color: #5e2bb8;
+    border: 1px solid #5e2bb8;
+    height: 56px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 4px;
+    
+}
+
+.airplane_seat_select_header4:hover {
+    background-color: #43109f;;
+}
+
+
+
+/* airline_airplane */
+.airline_airplane {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    margin: 0 auto;
+    position: fixed;
+    top: 0%;
+    overflow: scroll;
+    z-index: 100;
+}
+
+
+.airline_airplane_container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: lightblue;
+
+}
+
+
+.airline_airplane_container_header {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #eee;
+
+    position: sticky;
+    top: 0%;
+    z-index: 102;
+}
+
+
+.airline_airplane_container_header_passenger_info {
+    width: 500px;
+    padding: 50px 50px;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_airplane_container_header_passenger_info > div:not(:nth-child(1)) > span:nth-child(1) {
+    color: rgb(94, 43, 184);
+}
+
+
+
+
+
+
+
+.airline_airplane_container_close_btn {
+    cursor: pointer;
+    height: 100px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.airline_airplane_container_close_btn > div:nth-child(1) {
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/ico-alllmenu_close.png);
+
+}
+
+body > .airline_airplane_active {
+    display: block;
+}
+
+.airline_airplane_model {
+    display: none;
+}
+
+
+.airline_airplane_container_body > .airline_airplane_model_active {
+    display: block;
+}
+
+
+.airline_airplane_container_body {
+    display: flex;
+}
+
+
+
+
+.airline_airplane_model_img {
+    position: relative;
+}
+
+.airline_airplane_model > .airline_airplane_model_img > img {
+    width: 600px;
+    object-fit: contain;
+}
+
+
+
+
+
+/* airline_prestige_container  */
+.airline_prestige_container > div {
+    cursor: pointer;
+    width: 56px;
+    height: 59px;
+
+    z-index: 101;
+}
+
+.airline_prestige_container > div:hover {
+    border: 1px solid #333;
+}
+
+
+.airline_prestige_container > .model1_prestige_reserved {
+    background-image: url(../img/main5_airline6/prestige_basic_reserved.png);
+ }
+.model1_prestige_selected {
+    background-image: url(../img/main5_airline6/prestige_basic_selected.png);
+}
+
+
+.airline_prestige_container > .model1_prestige_pet.model1_prestige_reserved {
+    background-image: url(../img/main5_airline6/prestige_pet_reserved.png);
+}
+
+.airline_prestige_container > .model1_prestige_pet.model1_prestige_selected {
+    background-image: url(../img/main5_airline6/prestige_pet_selected.png);
+}
+
+
+
+
+/* airline_economy_container */
+
+.airline_economy_container > div {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+
+    z-index: 101;
+}
+
+
+.airline_economy_container > div:hover {
+    border: 1px solid #333;
+}
+
+
+.airline_economy_container > .model1_economy_reserved {
+    background-image: url(../img/main5_airline6/economy_basic_reserved.png);
+}
+
+.model1_economy_selected {
+    background-image: url(../img/main5_airline6/economy_basic_selected.png);
+}
+
+
+
+.airline_economy_container > .model1_economy_pet.model1_economy_reserved {
+    background-image: url(../img/main5_airline6/economy_pet_reserved.png);
+}
+
+.airline_economy_container > .model1_economy_pet.model1_economy_selected {
+    background-image: url(../img/main5_airline6/economy_pet_selected.png);
+}
+
+.airline_economy_container > .model1_economy_disability.model1_economy_reserved {
+    background-image: url(../img/main5_airline6/economy_disability_reserved.png);
+}
+
+.airline_economy_container > .model1_economy_disability.model1_economy_selected {
+    background-image: url(../img/main5_airline6/economy_disability_selected.png);
+}
+
+.airline_economy_container > .model1_economy_extra_leg.model1_economy_reserved {
+    background-image: url(../img/main5_airline6/economy_extra_leg_reserved.png);
+}
+
+.airline_economy_container > .model1_economy_extra_leg.model1_economy_selected {
+    background-image: url(../img/main5_airline6/economy_extra_leg_selected.png);
+}
+
+.airline_economy_container > .model1_economy_preferred.model1_economy_reserved {
+    background-image: url(../img/main5_airline6/economy_preferred_reserved.png);
+}
+
+.airline_economy_container > .model1_economy_preferred.model1_economy_selected {
+    background-image: url(../img/main5_airline6/economy_preferred_selected.png);
+}
+
+
+
+
+
+
+
+
+/* airline_airplane_container_body_right */
+
+.airline_airplane_container_body_right {
+    width: 600px;
+    padding-top: 50px;
+    padding-left: 100px;
+    
+    position: fixed;
+    top: 10%;
+    right: 20%;
+}
+
+.airline_airplane_container_body_right > div:nth-child(2) {
+    width: 400px;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: 700;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.airline_airplane_container_body_right > div:nth-child(3) {
+    width: 400px;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.airline_airplane_container_body_right > div:nth-child(4) {
+    margin-top: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    background-color: #5e2bb8;
+    border: 1px solid #5e2bb8;
+    height: 56px;
+    line-height: 54px;
+    font-size: 17px;
+    padding: 0 35px;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 4px;
+}

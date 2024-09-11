@@ -1,0 +1,1840 @@
+@charset "UTF-8";
+
+.border { border: 1px solid red; }
+.center { margin: 0 auto; }
+.fl { float: left; }
+.fr { float: right; }
+* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+body {
+	/* margin은 나중에 추가 */
+	margin: 0 auto;					
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: -.4px;
+	-webkit-text-size-adjust: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+.container {
+	width: 1200px;
+	height: auto;
+}
+.container_inner {
+	margin-top: 50px;
+	width: 1200px;
+	height: auto;
+}
+.contents {
+	width: 1200px;
+	height: auto;
+}
+.contents_top {
+	width: 1200px;
+	height: 139px;
+}
+.btn_safety_info {
+	width: 1200px;
+	height: 56px;
+	padding-top: 14px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+    display: flex;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+.flag {
+    display: block;
+    margin-top: 2px;
+    width: 32px;
+    height: 20px;
+    border-radius: 0.2rem;
+}
+.flag img{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 100%;
+}
+.country_name {
+    margin-left: 8px;
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.54px;
+    line-height: 1.5;
+}
+.country_name_span {
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.54px;
+}
+.search_wrap {
+	width: 1200px;
+	height: 63px;
+	
+}
+.search_wrap_line {
+	width: 1200px;
+	height: 63px;
+	margin-bottom: 40px;
+    border-bottom: 2px solid #111;
+    padding: 0;
+}
+.search_name_box {
+    position: relative;
+	width: 458px;
+	height: 46px;
+	border: 1px solid #c2c2c2;
+    display: inline-block;
+    border-radius: 4px;
+}
+.oversea_hotel_search_icon {
+	width: 13px;
+	height: 13px;
+	padding: 1px 6px;
+	position: absolute;
+	top: 16px;
+    left: 21px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ico-search.png) no-repeat 0 0 / 13px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+}
+.hotel_search_input {
+	width: 400px;
+	height: 44px;
+	margin-left: 40px;
+	padding-right: 15px;
+	border: none;
+}
+.right_search {
+	width: 557.26px;
+	height: 46px;
+	margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 2px;
+}
+.btn_hotel_search {
+	width: 120px;
+	height: 46px;
+    font-size: 15px;
+    line-height: 44px;
+    padding: 0 20px;
+    margin: 0 2px;
+    color: #fff !important;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+}
+.search_room_num {
+	width: 157.14px;
+	height: 46px;
+	font-size: 15px;
+    line-height: 44px;
+    color: #111;
+    margin: 0 2px;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 0 2px;
+    cursor: pointer;
+    
+}
+.search_date {
+	position: relative;
+	width: 265px;
+	height: 46px;
+	font-size: 15px;
+    line-height: 44px;
+    color: #111;
+    margin: 0 2px;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 0 2px;
+    cursor: pointer;
+    
+}
+.hotel_search_date {
+	height: 44px;
+    position: relative;
+    display: flex;
+    padding-left: 23px;
+}
+.hotel_search_date_icon {
+	font-size: 15px;
+	width: 14px;
+	height: 14px;
+	background-position: -135px -18px;
+    vertical-align: middle;
+	margin-right: 4px;
+	display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    font-size: 15px;
+    line-height: 44px;
+    color: #111;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.hotel_search_days {
+	position: absolute;
+    top: 0;
+    right: 9px;
+	height: 44px;
+	margin-left: -2px;
+	padding-left: 9px;
+	color: #5e2bb8;
+	font-size: 15px;
+}
+.hotel_search_days::before {
+	content: '';
+	background-size: cover;
+	width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+}
+.search_hotel_room_num {
+	height: 44px;
+	font-size: 15px;
+	float: left;
+}
+.search_hotel_person_num {
+	height: 44px;
+	color: #5e2bb8;
+	font-size: 15px;
+}
+.search_room_num:hover, .search_date:hover {
+	border-color: #111;
+}
+.btn_hotel_search:hover {
+	border-color: #43109f;
+    background-color: #43109f;
+}
+.content_inner {
+	width: 1200px;
+	height: auto;
+	margin-top: 40px;
+}
+.hotel_info_box {
+	width: 1200px;
+	height: 494px;
+	margin-bottom: 60px;
+}
+.info_box_left {
+	width: 710px;
+	height: 494px;
+	padding-right: 36px;
+}
+.photo_one {
+	display: inline-block;
+ 	width: 334px;
+    height: 274px;
+	margin: 0 6px 6px 0;
+}
+.photo_two {
+	display: inline-block;
+ 	width: 334px;
+    height: 274px;
+	margin-bottom: 6px;
+}
+.photo_three, .photo_four {
+	display: inline-block;
+	width: 220px;
+    height: 174px;
+    margin: 0 7px 0 0;
+}
+.photo_five {
+	display: inline-block;
+	width: 220px;
+    height: 174px;
+	margin: 0;
+}
+.photo_one > img, .photo_two > img {
+    width: 334px;
+    height: 274px;
+    object-fit: cover;
+}
+.photo_three > img, .photo_four > img, .photo_five > img {
+    width: 220px;
+    height: 174px;
+    line-height: 0;
+    object-fit: cover;
+}
+.bottom_icon_box {
+	width: 128px;
+	height: 28px;
+	margin-top: 12px;
+}
+.btn_print {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	margin-left: 15px;
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 1px;
+    vertical-align: top;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn_print::before {
+    width: 26px;
+    height: 26px;
+    background-position: -405px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png");
+    -webkit-tap-highlight-color: initial;
+}
+.btn_share {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	margin-left: 13px;
+	background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn_share::before {
+    width: 26px;
+    height: 26px;
+    background-position: -436px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png");
+    -webkit-tap-highlight-color: initial;
+}
+.btn_zzim {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	margin-top: 2px;
+	margin-left: 12px;
+	background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn_zzim::before {
+    width: 26px;
+    height: 24px;
+    background-position: -25px -380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png");
+   
+}
+.info_box_right {
+	width: 490px;
+	height: 454px;
+	padding-bottom: 58px;
+}
+.info_hotel_star {
+	width: 490px;
+	height: 24px;
+    color: #8173b8;
+    padding: 0;
+    font-size: 13px;
+    line-height: 13px;
+    height: auto;
+}
+.info_hotel_wrap {
+	width: 490px;
+	height: 58px;
+	margin-top: 6px;
+}
+.info_hotel_title {
+	width: 490px;
+	height: 36px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #111;
+    line-height: 39px;
+    letter-spacing: -1px;
+}
+.info_hotel_title_eng {
+    width: 490px;
+    height: 13px;
+    font-size: 13px;
+    color: #888;
+    margin-top: 9px;
+    font-weight: normal;
+    line-height: 1;
+}
+.hotel_point {
+	width: 490px;
+	height: 24px;
+	margin-top: 20px;
+}
+.point_box {
+	
+	/* 내용에 맞는 사이즈 */
+    /* width: fit-content; */
+	height: 24px;
+	color: #5e2bb8;
+    border: 1px solid #5e2bb8;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 6px;
+}
+.benefit_box {
+	width: 490px;
+	height: 22px;
+	margin-top: 30px;
+    vertical-align: middle;
+}
+.benefit_text {
+	width: fit-content;
+	height: 22px;
+	margin-left: 0;
+	margin-right: 7px;
+    padding: 1px 4px;
+    color: #fff;
+    background: #5e2bb8;
+    height: 22px;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: -.8px;
+	
+}
+.review_area {
+	width: 490px;
+	height: 61px;
+    margin: 20px 0 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+.review_area >div:first-child {
+	width: 490px;
+	height: 35px;
+}
+.review_area > div:first-child > div:first-child {
+	width: 490px;
+	height: 35px;
+	padding-top: 14px;
+	line-height: 21px;
+}
+.hotel_rating {
+	width: 17px;
+    font-size: 14px;
+   	vertical-align: middle;
+    height: 17px;
+    font-weight: 700;
+    color: #111;
+    line-height: 16px;
+    
+}
+.hotel_rating::before {
+	width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    background: url(https://image.hanatour.com/usr/static/svg/star.svg) no-repeat 50% / 100%;
+    margin: -3px 4px 0 0;
+    display: inline-block;
+    content: '';
+}
+.rating_level {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    color: #111;
+    font-weight: normal;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.show_hotel_review {
+    display: inline-block;
+    color: #111;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-decoration: underline;
+    color: #5e2bb8;
+}
+.price_area {
+	width: 490px;
+	height: 55px;
+}
+.price_inner_option {
+	width: 245px;
+	height: 45px;
+	margin-top: 10px;
+	padding-right: 36px;
+}
+.price_inner_text {
+	width: 209px;
+	height: 22.5px;
+	margin-bottom: 3px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+.price_inner_text_bottom {
+	width: 209px;
+	height: 19.5px;
+    line-height: 1.5;
+    font-size: 13px;
+    color: #888;
+}
+.price_area_price {
+	width: 245px;
+	height: 42px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 32px;
+    color: #333;
+    font-weight: 600;
+    column-gap: 7px;
+}
+.price_unit {
+	font-size: 22px;
+    color: #333;
+    position: relative;
+    top: -2px;
+    font-weight: 400;
+}
+.banner_first, .banner_second {
+	width: 1200px;
+	height: 90px;
+	margin-top: 30px;
+}
+
+.banner_first, .banner_second a {
+	cursor: pointer;
+}
+.about_hotel {
+	width: 1200px;
+	height: 228px;
+	border-top: 2px solid #000;
+    padding-top: 40px;
+    margin-top: 80px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.about_hotel_text {
+	width: 600px;
+	height: 154px;
+}
+.about_hotel_title {
+	width: 600px;
+	height: 22px;
+	font-size: 22px;
+    font-weight: 600;
+    color: #111;
+}
+.item_text {
+	width: 600px;
+	height: 21px;
+	margin-top: 5px;
+	color: #111;
+	font-size: 14px;
+    line-height: 21px;
+}
+.icn_location, .icn_time, .icn_floor, .icn_telephone, .icn_fax {
+    position: relative;
+    padding-left: 27px;
+    display: inline-block;
+}
+.show_map {
+    margin-left: 8px;
+    color: #5e2bb8;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+}
+.icn_location::before {
+    position: absolute;
+    left: 3px;
+    bottom: -1px;
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+}
+.icn_time::before {
+    background-position: -190px -81px;
+    width: 16px;
+    height: 16px;
+	position: absolute;
+    left: 3px;
+    bottom: -1px;
+    margin-right: 9px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+    
+}
+.icn_floor::before {
+	position: absolute;
+    background-position: -212px -81px;
+    width: 15px;
+    height: 15px;
+    left: 3px;
+    bottom: -1px;
+    margin-right: 9px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+    
+    
+}
+.icn_telephone::before {
+	position: absolute;
+	background-position: -38px -260px;
+    position: absolute;
+    left: 3px;
+    bottom: -1px;
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+}
+.icn_fax::before {
+	position: absolute;
+    background-position: -170px -80px;
+    width: 18px;
+    height: 17px;
+    left: 3px;
+    bottom: -1px;
+    margin-right: 9px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+    
+}
+.result_wrap {
+	width: 1200px;
+	height: 66px;
+	padding-top: 20px;
+}
+.btn_wrap {
+	width: 1200px;
+	height: 46px;
+	display: flex;
+	justify-content: flex-end;
+}
+.btn_result_date {
+	width: 258.52px;
+	height: 46px;
+	font-size: 15px;
+    line-height: 44px;
+    color: #111;
+    margin: 0 6px;
+    cursor: pointer;
+}
+.btn_result_date::before {
+    position: relative;
+    top: -2px;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 0 0;
+    background-position: -135px -18px;
+    vertical-align: middle;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+}
+.btn_result_room_num {
+	width: 157.14px;
+	height: 46px;
+	font-size: 15px;
+    line-height: 44px;
+    color: #111;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.btn_result_date, .btn_result_room_num {
+	background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+}
+.btn_result_date:hover, .btn_result_room_num:hover {
+	border-color: #111;
+}
+.result_room_num_left {
+    display: inline-block;
+    position: relative;
+	height: 44px;
+}
+.result_room_num_left::before {
+	position: relative;
+    top: -2px;
+    width: 14px;
+    height: 14px;
+    background-position: -232px -81px;
+    vertical-align: middle;
+    padding-left: 3px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png");
+    
+}
+.result_room_num_right {
+	height: 44px;
+	position: relative;
+    padding-left: 9px;
+    display: inline-block;
+    margin-left: 5px;
+    min-height: 13px;
+    color: #5e2bb8;
+}
+.result_room_num_right::before {
+   	width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    display: inline-block;
+    content: '';
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.btn_result_calender {
+	width: 178.19px;
+	height: 44px;
+}
+.result_date {
+    position: relative;
+    padding-left: 9px;
+    display: inline-block;
+    margin-left: 5px;
+    min-height: 13px;
+    color: #5e2bb8;
+}
+.result_date::before {
+	width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    display: inline-block;
+    content: '';
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+#tab_menu {
+	width: 1200px;
+	height: auto;
+}
+.tab_filter {
+	width: 	1200px;
+	height: 71px;
+    position: relative;
+    background: #f7f7f7;
+    padding: 16px 150px 10px 125px;
+    border-bottom: 1px solid #dddddd;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.room_grouping {
+	position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 24px;
+    left: 20px;
+	width: 80.4px;
+	height: 24px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.room_grouping::before {
+	width: 24px;
+    height: 24px;
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+	background-image : url("https://image.hanatour.com/usr/static/img2/pc/com/ico_check_.png");
+}
+.form_wrap {
+	width: 925px;
+	height: 44px;
+}
+.form_holder {
+    margin: 4px 4px 4px 0;
+    position: relative;
+    display: inline-block;
+}
+.form_holder label {
+    display: inline-block;
+	height: 36px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    color: #666;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+.form_holder > label > input {
+	display: none;
+}
+.deselect {
+	width: 110px;
+	height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+.deselect label {
+    color: #333;
+    min-width: 110px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    cursor: pointer;
+}
+.btn_deselect {
+	border: none;
+	display: inline-block;
+ 	background-color: #fff;
+	height: 32px;
+    line-height: 34px;
+    font-size: 13px;
+}
+.room_price_info {
+	width: 1200px;
+	height: 40.2px;
+	margin-top: 15px;
+}
+.alert_message {
+	width: 810px;
+	height: 40.2px;
+	margin-top: 0;
+    padding: 11px 15px;
+    font-weight: 600;
+    position: relative;
+    background: #f7f7f7;
+    line-height: 1.4;
+    color: #666;
+    font-size: 13px;
+}
+.btn_close_alert {
+	position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    background-position: -308px -112px;
+    font-size: 0;
+    text-indent: -999999px;
+    margin-top: -7px;
+    cursor: pointer;
+    border: none;
+}
+.room_align_box {
+	width: 390px;
+	height: 36px;
+}
+.entire_room_title {
+	width: 1200px;
+	height: 28px;
+	margin-top: 40px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 17px;
+    color: #111;
+    line-height: 1;
+    font-weight: 400;
+}
+.entire_room_type {
+	width: 1200px;
+	height: auto;
+	margin-top: 30px;
+    border-top: 1px solid #eaeaea;
+}
+.room_type {
+	width: 1200px;
+	height: auto;
+}
+.room_type_title {
+	width: 1200px;
+	height: 58px;
+    font-size: 17px;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+}
+.room_type_title span {
+	position: relative;
+	float: right;
+    margin-right: 30px;
+    font-weight: 600;
+}
+.room_type_title::before {
+	width: 20px;
+	height: 20px;
+	background-position: -118px -52px;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png");
+}
+.room_type_title::after {
+	width: 20px;
+	height: 20px;
+	background-position: -143px -52px;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png");
+    display: none;
+}
+.room_type_content {
+	width: 1200px;
+	height: auto;
+}
+.room_type_content ul {
+	border: none;
+	list-style: none;
+}
+.room_type_content li {
+	width: 1200px;
+	height: 148px;
+    padding: 25px 10px;
+    margin-bottom: 0;
+    overflow: visible;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    position: relative;
+}
+.room_type_content_box {
+	width: 1180px;
+	height: 81px;
+}
+.item_area {
+	width: 596px;
+	height: 75px;
+}
+.item_area a {
+	width: 596px;
+	height: 27px;
+    text-decoration: none;
+}
+.item_name {
+	width: 546px;
+	height: 27px;
+	margin-right: 50px;
+	font-size: 17px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #111;
+}
+.alarm_box {
+	width: 596px;
+	height: 25.5px;
+	margin-top: 20px;
+}
+.btn_alarm {
+	display: inline-block;
+	width: 39x;
+	line-height: 23px;
+    font-size: 12px;
+    padding: 0 8px;
+    margin: 0;
+    color: #666;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    cursor: pointer;
+	height: 25px;
+}
+.item_center {
+    display: flex;
+	width: 226px;
+	height: 81px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.item_center span {
+	font-size: 13px;
+}
+.item_cancel_date {
+	width: 176px;
+	height: 19.5px;
+	margin-right: 50px;
+	line-height: 1.5;
+}
+.item_cancel_date_text {
+	color: #0ebabf;
+	padding-left: 20px;
+    display: inline-block;
+    position: relative;
+}
+.item_breakfast {
+	width: 176px;
+	height: 20px;
+	margin-right: 50px;
+	line-height: 1.5;
+}
+.item_breakfast span {
+	font-size: 13px;
+}
+.item_breakfast_text {
+    color: #666;
+	padding-left: 20px;
+    display: inline-block;
+    position: relative;
+}
+.item_cancel_date_text::before {
+    background-position: 0 -133px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 14px;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/htl/icn_sub_prod_list.png");
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+}
+.item_breakfast_text::before {
+    background-position: 0 -60px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://image.hanatour.com/usr/static/img2/pc/htl/icn_sub_prod_list.png");
+    
+}
+.item_price_box {
+	width: 180px;
+	height: 81px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.price_standard {
+    margin-left: 5px;
+    color: #111;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.item_price {
+	width: 180px;
+	height: 33px;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 22px;
+    color: #111;
+    font-weight: 600;
+    text-align: right;
+}
+.won {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+}
+.btn_reserv_wrap {
+	position: absolute;
+	width: 140px;
+	height: 46px;
+    top: 50%;
+    right: 10px;
+    bottom: auto;
+    margin-top: -23px;
+}
+.btn_reserv {
+	width: 140px;
+    color: #fff !important;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    min-width: 120px;
+    height: 46px;
+    line-height: 44px;
+    font-size: 15px;
+    padding: 0 30px;
+   	font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.room_list {
+	width: 1240px;
+	height: 240px;
+    overflow: hidden;
+    margin: 60px -20px 0;
+}
+.banner_bottom {
+	width: 1200px;
+	height: 90px;
+}
+.banner_bottom img {
+	width: 1200px;
+	height: 90px;
+    object-fit: cover;
+}
+.hotel_detail_tab {
+	width: 1200px;
+	height: auto;
+}
+
+.hotel_detail_tab dl {
+    padding: 40px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0;
+}
+.hotel_detail_tab dt {
+	display: inline-block;
+    width: 150px;
+    font-size: 17px;
+    color: #111;
+    font-weight: 600;
+    vertical-align: top;
+    line-height: 1.4;
+}
+.hotel_detail_tab dd {
+   	display: inline-block;
+    width: 1050px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+.amenity, .facility {
+	width: 1050px;
+	height: 32.02px;
+	margin-top: 25px;
+}
+.amenity_first_line {
+	margin: 0;
+}
+.amenity_inner, .facility_inner {
+	width: 220px;
+	height: 32.02px;   	
+}
+.amenity_icon, .amenity_icon img {
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+}
+.facility_icon, .facility_icon img {
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+}
+.amenity_icon div {
+	float: left;
+}
+.facility_icon div {
+	float: left;
+}
+.amenity ul, .facility ul {
+	float: left;
+	width: 830px;
+	height: 32px;
+	border: none;
+	list-style: none;
+	height: 32px;
+}
+.amenity li, .facility li {
+	display: inline-block;
+    font-size: 15px;
+    color: #333;
+    background: #f5f5f5;
+    padding: 4px 12px;
+    border-radius: 4px;
+    list-style: none;
+    margin-left: 5px;
+}
+
+.hotel_review {
+	width: 1200px;
+	height: auto;
+	margin-top: 60px;
+}
+.hotel_review_inner {
+	width: 1200px;
+	height: auto;
+	margin-top: 40px;
+}
+.hotel_review_title {
+	width: 1200px;
+	height: 22px;
+	margin-top:50px;
+	margin-bottom: 30px;
+	font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1;
+}
+.rating_main_box {
+	width: 1200px;
+	height: 277px;
+	overflow: hidden;
+    padding: 20px 0;
+    border: 1px solid #ddd;
+}
+.rating_avg_box {
+	width: 332px;
+	height: 126px;
+	float: left;
+}
+.rating_avg_inner {
+	width: 332px;
+	height: 116px;
+	padding-top: 60px;
+	text-align: center;
+	margin-top: 10px;
+}
+.grade {
+	padding-left: 10px;
+}
+.grade_num {
+    color: #111;
+    font-weight: 700;
+    font-size: 56px;
+    display: inline-block;
+    font-style: normal;
+}
+.grade_total {
+	width: 19.35px;
+	height: 32px;
+    font-size: 32px;
+    display: inline-block;
+    position: relative;
+    margin-left: 25px;
+    color: #dbdbdb;
+}
+.grade_total::before {
+	width: 6.28px;
+	height: 20px;
+	content: '/';
+    position: absolute;
+    left: -15px;
+    top: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    vertical-align: middle;
+    color: #dbdbdb;
+    text-align: center;
+}
+.grade_count {
+	width: auto;
+	height: 26px;
+	padding-left: 17px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 22px;
+    vertical-align: top;
+    display: inline-block;
+}
+.rating_graph_box {
+	width: 670px;
+	height: 195px;
+	padding-left: 25px;
+    padding-top: 22px;
+	float: left;
+	position: relative;
+}
+.rating_graph_box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 28px;
+    bottom: -18px;
+    width: 1px;
+    background: #ededed;
+}
+.rating_graph_inner {
+	/* width: 645px; */
+	height: 183px;
+	/* margin-top: 12px; */
+	
+}
+.rating_graph_inner canvas {
+	/* width: 645px; */
+	width: 645px;
+}
+/* .graph_area {
+	font-size: 13px;
+    color: #888;
+    display: table-cell;
+    position: relative;
+    padding-top: 145px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+.graph_area:first_child {
+	width: 54px;
+}
+.graph {
+	width: 22px;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 125px;
+    margin-left: -9px;
+    font-size: 13px;
+    color: #888;
+} */
+.rating_option_wrap {	
+	width: 1200px;
+	height: 74px;
+    padding: 40px 0 20px;
+    position: relative;
+}
+.review_total_count {
+    color: #5e2bb8;
+}
+.rating_option_wrap ul {
+	height: 14px;
+	list-style: none;
+    float: right;
+    display: flex;
+}
+.rating_option_wrap li {
+	list-style: none;
+	margin-left: 15px;
+}
+.review_filter {
+	height: 56px;
+	position: relative;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 40px;
+    padding: 0 0 0 20px;
+    background-color: #f5f5f5;
+    align-items: center;
+    border-radius: 4px;
+}
+.review_type, .review_type select {
+	width: 252px;
+	height: 40px;
+    
+}
+.review_type select {
+	border: 1px solid #c2c2c2;
+    line-height: 38px;
+    text-align: left;
+    color: #333;
+    background: #fff;
+    margin-right: 12px;
+    border-radius: 4px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 31px 0 13px;
+}
+.btn_review_deselect {
+	width: 89.07px;
+	height: 39px;
+    line-height: 39px;
+    margin-right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+    font-size: 13px;
+    color: #333;
+    padding: 0 10px 0;
+    position: relative;
+  	cursor: pointer;
+}
+.btn_review_text::before {
+    width: 14px;
+    height: 14px;
+    background-position: -134px -30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+.review_list {
+	width: 1200px;
+	height: auto;
+}
+.review_list > li {
+	width: 1200px;
+	padding: 30px 0;
+    border-bottom: 1px solid #eaeaea;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    -webkit-text-size-adjust: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+.rating_info {
+	height: 20px;
+	display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+.review_point {
+	width: 45px;
+	height: 20px;
+	display: flex;
+    align-items: center;
+    color: #5e2bb8;
+    font-size: 16px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/rating_star_on.png) no-repeat 0 1px / 16px;
+    padding-left: 18px;
+    min-width: 45px;
+}
+strong {
+	font-weight: 600;
+}
+.rating_info > div:first-child {
+	margin-left: 5px;
+	height: 20px;
+    display: flex;
+    align-items: center;
+}
+.review_person_icon {
+	width: 35px;
+	height: 20px;
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #666;
+    margin: 0 0 0 4px;
+    font-size: 13px;
+}
+.review_person_icon img {
+	border: 1px solid #ddd;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: url(https://image.hanatour.com/usr/static/img2/mobile/icon/profile-64@2x.png) no-repeat 50% / 100% !important;
+}
+.review_writer {
+	display: flex;
+    align-items: center;
+    position: relative;
+    color: #666;
+    margin: 0 0 0 4px;
+    font-size: 13px;
+    margin-left: 4px;
+}
+.review_option_type {
+	height: 20px;
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #666;
+    margin: 0 0 0 4px;
+    font-size: 13px;
+}
+.review_option_type::before, .review_regist_date::before {
+	content: "";
+    position: absolute;
+    left: 1px;
+    top: 9px;
+    background: #dcdcdc;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+}
+.review_regist_date {
+    height: 20px;
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #666;
+    margin: 0 0 0 4px;
+    font-size: 13px;
+}
+.review_product {
+	width: 1200px;
+	height: 18px;
+}
+.review_product ul {
+	width: 1200px;
+	height: 18px;
+    margin: 12px 0 20px;
+    list-style: none;
+}
+.review_product li {
+	width: 1200px;
+	height: 18px;
+	list-style: none;
+    display: flex;
+    padding: 0;
+}
+.review_product strong {
+	color: #999;
+    font-size: 13px;
+    min-width: 65px;
+    letter-spacing: -0.65px;
+    line-height: 18px;
+}
+.review_product span {
+    margin: 0 8px 0 0;
+    color: #111;
+    font-size: 13px;
+    letter-spacing: -0.65px;
+    line-height: 18px;
+}
+.review_content {
+	margin-top: 20px;
+	font-size: 15px;
+    color: #111;
+    letter-spacing: -.6px;
+    line-height: 26px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.review_topic_wrap {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review_topic_wrap > span {
+	height: 26px;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    margin: 0 8px 8px 0;
+    padding: 0 10px;
+    border-radius: 4px;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: -.52px;
+    z-index: 5;
+    position: relative;
+    font-weight: 600;
+}
+.review_topic_wrap > span > img {
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+.review_img_box {
+	width: 1200px;
+	height: 120px;
+}
+.review_img_list {
+	width: 1200px;
+	height: 120px;
+	margin: 12px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    list-style: none;
+}
+.review_img_list > li {
+	width: 120px;
+	height: 120px;
+    position: relative;
+    margin: 0 10px 0 0;
+    list-style: none;
+}
+.review_img_list > li > img {
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+}
+.btn_helpful_box {
+	width: 1200px;
+	height: 36px;
+	margin-top: 20px;
+	display: flex;
+    justify-content: space-between;
+}
+.btn_helpful {
+	height: 34px;
+    border: 1px solid #e5e5e5;
+    padding: 10px 12px 10px 30px;
+    border-radius: 4px;
+    float: left;
+    font-size: 12px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ic_vote_good_black.png) no-repeat 10px 50% / 15px;
+    margin: 2px 7px 0 0;
+    color: #111;
+    font-weight: 600;
+    cursor: pointer;
+}
+.paginate_wrap {
+	width: 1200px;
+	height: 56px;
+	margin-top: 15px;
+	text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.pagination {
+	height: 56px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.hr {
+	width: 1200px;
+	border: none;
+    border-top: 2px solid #000;
+    margin: 60px 0 40px;
+    height: 2px;
+    position: relative;
+    clear: both;
+}
+.hotel_near {
+	width: 1200px;
+	height: 22px;
+	margin-bottom: 40px;
+	font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1;
+}
+.hotel_near_wrap {
+	width: 1240px;
+	height: 435px;
+}
+.hotel_near_swipter {
+	width: 1240px;
+	height: 435px;
+	overflow: visible;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.review_rating {
+	width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.write_review {
+	width: 75px;
+	height: 39px;
+    margin-right: 10px;
+}
+.btn_write_review {
+	width: 75px;
+	height: 39px;
+	background-color: #5e2bb8;
+	border-color: #5e2bb8;
+	border-radius: 4px;
+	padding: 5px 8px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+}
+.fullscreen_review_grey {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 8;
+}
+.write_review_box {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	width: 1200px;
+	height: 800px;
+	z-index: 20;
+}
+.write_review_box > div:first-child {
+   width : 1120px;
+   height: 84px;
+   margin : 0 40px;
+   padding : 40px 0 20px;
+   border-bottom : 2px solid black;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+}
+.write_review_box > div > span {
+	font-size: 22px;
+}
+.btn_close_review {
+   	background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 26px;
+    height: 26px;
+    background-position: 0 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 0;
+    margin-left: 20px;
+    position: abosolute;
+    cursor: pointer;
+}
+.write_review_bottom {
+	width: 1120px;
+}
+.write_review_bottom > div {
+    padding-left: 50px;
+}
+.write_review_bottom > div > select {
+    width: 45px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 8px;
+    margin-left: 5px;
+    margin-right: 12px;
+}
+
+textarea {
+    width: 1000px;
+    height: 400px;
+    margin: 50px;
+}
+.review_checkbox {
+    padding: 0 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.btn_regist_review {
+    float: right;
+    width: 65px;
+    height: 30px;
+    background: #5e2bb8;
+    color: #fff;
+    font-weight: 700;
+    border-color: #5e2bb8;
+    border-radius: 4px;
+}
+.btn_regist_wrap {
+	display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}

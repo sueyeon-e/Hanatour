@@ -1,0 +1,2291 @@
+
+
+
+.airline_search_page_header {
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/air/air_visual_01.png);
+    width: 100%;
+    height: 150px;
+
+    margin-bottom: 40px;
+}
+
+.airline_search_page_header_inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    position: relative;
+}
+
+.airline_search_page_header_inner1 {
+    color: white;
+}
+
+
+.airline_info_top {
+    display: flex;
+    justify-content: center;
+}
+
+.airline_info_top > div:nth-child(1),
+.airline_info_top > div:nth-child(3) {
+    font-size: 34px;
+    color: #fff;
+    vertical-align: middle;    
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_info_top > div:nth-child(2) {
+    padding-top: 3px;
+}
+.airline_info_top > div:nth-child(2) > div {
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_air.png);
+    background-position: -244px 0;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    margin: 0 8px;
+}
+
+
+
+.airline_info_bottom {
+    display: flex;
+
+    color: #fff;    
+    font-size: 15px;
+    line-height: 21px;    
+    font-weight: 400;
+    letter-spacing: -.4px;
+
+    margin-top: 14px;
+    padding-left: 55px;
+    justify-content: space-between;
+}
+
+.airline_info_bottom_center {
+    display: flex;
+}
+
+
+.airline_info_date {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.airline_info_date::before {
+    width: 14px;
+    height: 14px;
+    content: '';
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    background-repeat: no-repeat;
+    background-position: -90px -18px;
+
+    margin-top: 2px;
+    margin-right: 10px
+}
+
+
+    
+.airline_info_member {
+    display: flex;
+}
+
+
+.airline_info_member::before {width: 14px;
+    height: 14px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    background-position: -76px -18px;
+    
+    margin-top: 2px;
+    margin-right: 10px
+}
+
+
+.airline_info_change_btn {
+    cursor: pointer;
+    color: #fff;
+    width: 63px;
+    border-color: #fff;
+
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 13px;
+
+    padding-top: 0px;
+    padding-left: 18px;
+    margin-top: -15px;
+}
+
+
+
+
+
+/* 항공 검색창 */
+
+
+
+
+.airline_search_page_header_inner2 {
+    display: none;
+}
+
+.airline_search_page_header_inner > .airline_search_page_header_inner2.airline_info_change_active {
+    display: block;
+}
+
+
+
+
+.airline_search_page_header_inner2 {
+    width: 1200px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    background: #fff;
+    /* padding: 20px 30px; */
+    padding: 20px 30px 60px;
+    position: absolute;
+    top: 150%;
+    left: 0%;
+}
+
+
+.airline_search_tab {
+    line-height: 10px;
+    font-weight: 400;
+    color: #aaa;
+    font-size: 15px;
+    letter-spacing: -.4px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.airline_search_tab > div {
+    cursor: pointer;
+    margin-right: 38px;
+    padding-bottom: 10px;
+}
+
+.airline_search_tab > .airline_search_tab_active {
+    color: #111;
+    border-bottom: 3px solid #1e9eed;
+}
+
+
+
+.round_trip,
+.one_way,
+.multi_city {
+    display: none;
+}
+
+.round_trip.airline_search_tab_active,
+.one_way.airline_search_tab_active,
+.multi_city.airline_search_tab_active {
+    display: block;
+}
+
+
+
+/* 왕복 */
+.round_trip1 {
+    display: flex;
+}
+
+
+.round_trip_departure_airport {
+    position: relative;
+}
+
+.round_trip_departure_airport::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 13px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    position: absolute;
+    left: 4%;
+    top: 38%;
+}
+
+input[name='round_trip_departure_airport'] {
+    width: 410px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_departure_airport']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+
+
+
+/*  공항목록 시작 */
+
+.search_airport_list.search_airport_list_active {
+    display: block;
+}
+.search_airport_list {
+    display: none;
+    width: 695px;
+    height: 565px;
+    padding: 30px 30px 0;
+    background: #fff;
+    border: 1px solid #111;
+    box-shadow: 0 5px 20px 0 rgba(17, 17, 17, 0.3);
+    z-index: 100;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+}
+
+.search_airport_list1 {
+    font-size: 16px;
+    color: #111;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_airport_list1 > div:nth-child(1) {
+    padding-top: 7px;
+}
+
+.search_airport_list_close {
+    cursor: pointer;
+    display: flex;
+}
+
+.search_airport_list_close > div:nth-child(2) {
+    margin-left: 8px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/icon_header_Black_48@3x.png) no-repeat 50% / 100%;
+}
+
+
+.search_airport_list2 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.search_airport_recent {
+    position: relative;
+    background-color: #eef0f3;
+    font-size: 13px;
+    border-radius: 4px;
+    width: auto;
+    line-height: 20px;
+    margin: 0 8px 8px 0;
+    padding: 6px 25px 6px 10px;
+}
+
+
+.search_airport_recent > span:nth-child(1):hover { 
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.search_airport_recent > span:nth-child(2) {
+    cursor: pointer;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ic_btn_del.png) no-repeat 50% / 100%;
+    margin-top: -4px;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+
+
+.search_airport_recent_delete {
+    cursor: pointer;
+    background-color: #eef0f3;
+    font-size: 13px;
+    border-radius: 4px;
+    width: auto;
+    line-height: 20px;
+    margin: 0 8px 8px 0;
+    padding: 6px 10px 6px 10px;
+}
+
+.search_airport_list3 {
+    margin-top: 13px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.search_airport_list3::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 16px;
+    height: 16px;
+    background-position: -19px -52px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+
+
+
+.search_airport_list4 {
+    display: flex;
+    height: 379px;
+    border: 1px solid #ddd;
+    margin-top: 19px;
+}
+
+
+
+.search_airport_list4_left {
+    overflow-y: scroll;
+}
+
+.search_airport_list4_left > div {
+    cursor: pointer;
+    width: 189px;
+    height: 53px;
+    line-height: 24px;
+    padding: 14px 12px;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+
+.search_airport_list4_left > .search_airport_list4_active {
+    color: #5e2bb8;
+    background-color: #fff;
+}
+
+
+
+.search_airport_list4_right {
+    width: 424px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.search_airport_list4_container {
+    display: none;
+}
+
+.search_airport_list4_right > .search_airport_list4_active {
+    width: 424px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_airport_list4_right > .search_airport_list4_active > div {
+    cursor: pointer;
+    width: 212px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -.4px;
+    padding: 10px 20PX 10px 20px;
+}
+
+.search_airport_list4_right > .search_airport_list4_active > div:hover {
+    text-decoration: underline;
+}
+/* 공항목록 종료 */
+
+
+
+
+/* 도착지 <-> 출발지 */
+.round_trip_change {
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_air.png);
+    width: 26px;
+    height: 26px;
+    background-position: -271px 0;
+    margin: 18px 30px 0px;
+}
+
+
+
+.round_trip_arrival_airport {
+    position: relative;
+}
+
+.round_trip_arrival_airport::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+    width: 13px;
+    height: 14px;
+    margin-right: 9px;
+    background-position: -135px 0;
+    position: absolute;
+    left: 4%;
+    top: 38%;
+}
+
+
+input[name='round_trip_arrival_airport']  {
+    width: 410px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_arrival_airport']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+.round_trip_direct_flight {
+    cursor: pointer;
+    margin-left: 8px;
+    height: 62px;
+    width: 70px;
+    border: 2px solid #c2c2c2;
+    font-size: 13px;
+    color: #666;
+    padding-top: 23px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.round_trip_direct_flight.round_trip_direct_flight_active {
+    border: 2px solid #1e9eed;
+}
+
+input[name='round_trip_direct'] {
+    display: none;
+}
+
+
+
+
+/* round_trip2 */
+.round_trip2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.round_trip2_left {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*  왕복 출발 날짜 */
+.round_trip_departure_date {
+    position: relative;
+}
+
+.round_trip_departure_date::after {
+    width: 14px;
+    height: 14px;
+    background-position: -135px -18px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+
+    position: absolute;
+    left: 8%;
+    top: 38%;
+}
+
+
+input[name='round_trip_departure_date_calender'] {
+    width: 201px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_departure_date_calender']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+/* input[name='round_trip_departure_date_calender'] {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+} */
+
+
+
+
+
+
+
+/*  왕복 도착 날짜 */
+.round_trip_arrival_date {
+    position: relative;
+}
+
+.round_trip_arrival_date::after {
+    width: 14px;
+    height: 14px;
+    background-position: -135px -18px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
+
+    position: absolute;
+    left: 8%;
+    top: 38%;
+}
+
+
+
+input[name='round_trip_arrival_date_calender'] {
+    width: 201px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_arrival_date_calender']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+
+/* input[name='round_trip_arrival_date_calender'] {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+} */
+
+
+
+
+/* 왕복 인원수.좌석 */
+.round_trip2_right { 
+    margin-left: 86px;
+}
+
+input[name='round_trip_member'] {
+    width: 410px;
+    height: 62px;
+    font-weight: 400;
+    word-break: break-all;
+    letter-spacing: -.4px;
+
+    padding-left: 37px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f6f9;
+    font-size: 15px;
+    color: #888;
+    line-height: 62px;
+    text-align: left;
+    outline: none;
+}
+
+input[name='round_trip_member']:focus {
+    border: 1px solid rgb(94, 43, 184);
+}
+
+/* 왕복 submit */
+.round_trip_submit {
+    cursor: pointer;
+    width: 213px;
+    background: #1e9eed;
+    border-color: #1e9eed;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 8px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 17px;
+    border-radius: 8px 0 8px 8px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+
+
+
+/* 달력 시작*/
+
+section.lightpick {
+    position: absolute;
+    top: 113%;
+    left: 0%;
+    border: 1px solid black;
+}
+
+.round_trip_calender_select {
+    display: none;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 0px;
+    color: #fff;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    text-align: center;
+    padding: 24px 30px;
+
+    position: absolute;
+    top: 300%;
+    right: -357%;
+    z-index: 101;
+}
+/* 달력 종료 */
+
+
+
+
+
+
+.round_trip_member {
+    display: none;
+    width: 415px;
+    height: 500px;
+    padding: 35px 30px 0;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 6px 8px 0 rgba(50, 55, 89, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: absolute;
+    top: 80%;
+    z-index: 100;
+}
+ 
+.round_trip_member1 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #111;
+    line-height: 1;
+}
+
+
+.round_trip_member2 {
+    width: 336px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.round_trip_member2 > div {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.round_trip_member2 > div > div:nth-child(1) {
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+.round_trip_member2 > div > div:nth-child(2) {
+    display: flex;
+}
+
+.round_trip_member2 > div > div:nth-child(2) > div:nth-child(1) {
+    cursor: pointer;
+    background-position: -393px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+.round_trip_member2 > div > div:nth-child(2) > div:nth-child(2) {
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    width: 70px;
+    text-align: center;
+    line-height: 33px;
+}
+
+
+
+.round_trip_member2 > div > div:nth-child(2) > div:nth-child(3) {
+    cursor: pointer;
+    background-position: -425px -110px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+}
+
+
+
+
+.round_trip_member_child {
+    margin-top: 30px;
+}
+
+.round_trip_member_infant {
+    margin-top: 30px;
+}
+
+
+.round_trip_member3 {
+    padding-top: 30px;
+    width: 336px;
+    border-top: 1px solid #111;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 17px;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+
+
+
+.round_trip_member4 > div {
+    margin-top: 10px;
+    height: 24px;
+}
+
+
+.round_trip_member4 > div > label {
+    display: flex;
+}
+
+.round_trip_member4 > div > label > input { 
+    display: none;
+}
+
+
+.round_trip_member4 > div > label > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/its/btn_radio_ic_off.png) no-repeat 50% / 100%;
+    width: 24px;
+    height: 24px;
+}
+
+
+.round_trip_member > .round_trip_member4 > div 
+> .round_trip_seat_class_active  > div:nth-child(1) {
+    background: #fff url(https://image.hanatour.com/usr/static/img2/pc/com/btn_radio_ic_40@3x.png) no-repeat 50% / 100%;
+}
+
+
+.round_trip_member4 > div > label > div:nth-child(2) {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+
+.round_trip_member5 {
+    line-height: 36px;
+    margin: 17px -30px 0;
+    background-color: #f7f7f7;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+    margin-top: 43px;
+    height: 66px;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.round_trip_member_select {
+    cursor: pointer;
+    width: 110px;
+    height: 36px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    border: solid 1px #5e2bb8;
+    background-color: #5e2bb8;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.round_trip_member_select:hover {
+    border-color: #43109f;
+    background-color: #43109f;
+}
+
+
+
+
+
+/* 항공 검색창 종료*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* airline_search_page_body */
+.airline_search_page_body { 
+    width: 100%;
+}
+
+.airline_search_page_body_inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* airline_search_page_body_left */
+
+
+.airline_search_page_body_left {
+    width: 240px;
+    height: 1000px;
+}
+
+.airline_search_page_body_left_top {
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_search_page_body_left_top > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_search_page_body_left_top > div:nth-child(1) > div:nth-child(1) {
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+
+.airline_search_page_body_left_top > div:nth-child(1) > div:nth-child(2) {
+    cursor: pointer;
+    font-size: 12px;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -.4px;
+    padding-top: 2px;
+
+    margin-left: 10px;
+    display: flex;
+}
+
+.airline_search_page_body_left_top > div:nth-child(1) > div:nth-child(2)::before {
+    content: "";
+    background: url(https://image.hanatour.com/usr/static/svg/ico_refresh_type01.svg) no-repeat 0% 50%;
+    font-size: 12px;
+    color: #333;
+    padding-left: 20px;
+    margin-bottom: 18px;
+}
+
+
+.airline_search_page_body_left_top > div:nth-child(2) {
+    cursor: pointer;
+    
+    border: none;
+    font-size: 12px;
+    color: #111;
+    text-decoration: underline;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+
+
+.airline_search_page_body_left_bottom > div {
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.airline_filter > div:nth-child(1) {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding-top: 25px;
+}
+
+
+.airline_filter > div:nth-child(1) > div:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_filter > div:nth-child(1) > div:nth-child(2) {
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+    background: url(https://image.hanatour.com/usr/static/svg/ico_toggle_type01.svg) no-repeat 100% 50%;
+}
+
+
+.airline_filter > div:nth-child(2) {
+    display: none;
+}
+
+.airline_search_page_body_left_bottom > .airline_filter > .airline_filter_display_block {
+    display: block;
+}
+
+
+
+
+/* airline_search_page_body_right */
+
+.airline_search_page_body_right {
+    width: 900px;
+}
+
+
+.airline_search_page_body_right_top {
+    width: 900px;
+}
+
+
+.airline_filter_list1 {
+    display: inline-block;
+    width: 110px;
+    padding-top: 5px;
+}
+
+.airline_filter_list1 > span:nth-child(1) {
+    display: inline-block;
+
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-position: -58px -52px;
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    margin-bottom: -6px;
+}
+
+.airline_filter_list1 > span:nth-child(2) { 
+    color: #111;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    padding-left: 6px;
+    vertical-align: middle;    
+}
+
+.airline_filter_list1 > span:nth-child(3) { 
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    
+    background: #5e2bb8;
+    border-radius: 50%;
+    line-height: 22px;
+
+    margin-left: 7px;
+}
+
+
+
+
+.airline_filter_list2 > span {
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 26px;
+    padding: 9px 30px 10px 10px;
+    border-radius: 6px;
+    background-color: #eef0f3;
+    font-size: 13px;
+    color: #333;
+    vertical-align: top;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: relative;
+}
+
+
+.airline_filter_list2 > span::after {
+
+    content: "";
+    display: inline-block;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/ic_btn_del.png) no-repeat 50% / 100%;
+    width: 8px;
+    height: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+.airline_filter_list3 {
+    cursor: pointer;
+    display: inline-block;
+    padding: 9px 10px 10px 30px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    vertical-align: top;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.4px;
+    border: solid 1px #c2c2c2;
+    position: relative;
+}
+
+.airline_filter_list3::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 10px;
+    height: 10px;
+    background-position: -150px -30px;
+
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+
+
+
+
+/* 항공권 조회 오른쪽 */
+
+.airline_search_page_body_right_middle {
+    width: 900px;
+    height: 26px;
+    
+    border-bottom: 1px solid #eee;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 40px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+.airline_search_page_body_right_middle > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_search_page_body_right_middle > div:nth-child(1) > div:nth-child(1) {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: -.4px;
+}
+
+.airline_search_page_body_right_middle > div:nth-child(1) > div:nth-child(2) {
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    padding-top: 6px;
+    padding-left: 13px;
+}
+
+.airline_search_page_body_right_middle > div:nth-child(2) {
+    padding-top: 6px;
+    padding-right: 3px;
+    color: #666;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+
+.airline_search_page_body_right_middle2 {
+    width: 900px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_search_page_body_right_middle2 > div:nth-child(1) {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #111;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_search_page_body_right_middle2 > div:nth-child(1) > span:nth-child(2) {
+    color: #4585ff;
+}
+
+
+.airline_search_page_body_right_middle2 > div:nth-child(2) {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_order { 
+    cursor: pointer;
+}
+
+.airline_ticket_order > span {
+    margin-left: 17px;
+}
+
+.airline_ticket_order_active {
+    color: #5e2bb8;
+}
+
+
+/* 선택된 항공권 */
+.selected_airline_ticket_container {
+    margin-top: 35px;
+}
+
+.selected_airline_ticket {
+    width: 900px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+
+}
+
+.selected_airline_ticket_header {
+    height: 36px;
+    background-color: #4585ff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.selected_airline_ticket_header > div:nth-child(1) {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    margin-right: 10px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.selected_airline_ticket_header > div:nth-child(2) { 
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: -0.28px;
+    opacity: 0.8;
+    line-height: 1;
+}
+
+
+.selected_airline_ticket_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 30px 40px;
+}
+
+
+.selected_airline_ticket1 {
+    width: 120px;
+}
+.selected_airline_ticket1 > .airline_ticket_airline {
+    margin-top: 25px;
+    margin-left: -7px;
+}
+
+.selected_airline_ticket2 {
+    text-align: left;
+    margin-top: 9px;
+    margin-left: -20px;
+
+    position: relative
+}
+
+.selected_airline_ticket2 .airline_ticket_flight_number {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: -0.48px;
+    line-height: 23px;
+    padding-left: 2px;
+    font-weight: 500;
+}
+
+.selected_airline_ticket2 .airline_ticket_codeshare {
+    padding-top: 5px;
+    color: #4585ff;
+    font-size: 12px;
+    font-weight: 500;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: relative;
+    margin-left: 3px;
+}
+
+.selected_airline_ticket2 .airline_ticket_codeshare_mark {
+    cursor: pointer;
+
+    width: 14px;
+    height: 14px;
+    content: '';
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/icon_help@3x.png) 50% / 100%;
+    display: inline-block;
+    
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+.selected_airline_ticket2 .airline_ticket_codeshare_mark:hover + .airline_ticket_codeshare_hover {
+    display: block;
+}
+
+.selected_airline_ticket2 .airline_ticket_codeshare_hover {
+    display: none;
+    width: auto;
+    height: 40px;
+    padding: 10px 14px 10px 30px;
+    background-color: #fff;
+    border: 1px solid #999;
+    color: #111;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    z-index: 100;
+
+    position: absolute;
+    top: 160%;
+    left: 15%;
+}
+
+.selected_airline_ticket2 .airline_ticket_codeshare_hover::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    background-position: -67px -43px;
+    width: 11px;
+    height: 8px;
+    z-index: 100;
+
+    position: absolute;
+    top: -21%;
+    left: 10%;
+}
+
+.selected_airline_ticket2 .airline_ticket_codeshare_hover > span:nth-child(1)::after {
+    content: "";
+    background: url(https://image.hanatour.com/usr/static/svg/ico_flight_b_small.svg) no-repeat 0px 3px / 13px;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 22%;
+    left: 10%;
+}
+
+
+
+
+
+
+
+
+.selected_airline_ticket3 {
+    width: 260px;
+    display: flex;
+    text-align: center;
+
+    padding-top: 35px;
+    margin-top: -15px;
+    margin-right: 15px;
+
+    position: relative;
+}
+
+
+.selected_airline_ticket3 .airline_ticket_time {
+    margin-right: 22px;
+}
+
+.selected_airline_ticket3 .airline_ticket_time > div:nth-child(1) {
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.selected_airline_ticket3 .airline_ticket_time > div:nth-child(2) {
+    display: block;
+    font-size: 14px;
+    color: #111;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+
+
+.selected_airline_ticket3 .airline_ticket_stop {
+    margin-right: 27px;
+}
+
+
+.selected_airline_ticket3 .airline_ticket_stop_line {
+    width: 121px;
+    height: 10px;
+    content: '';
+    background: url(https://image.hanatour.com/usr/static/svg/air_arrow_long.svg) no-repeat 0 0;
+    
+    margin-top: 6.5px;
+}
+
+.selected_airline_ticket3 .airline_ticket_stop > div:nth-child(1) {
+    font-size: 12px;
+    color: #888;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.4px;
+
+    position: absolute;
+    top: 28%;
+    left: 40%;
+}
+
+.selected_airline_ticket3 .airline_ticket_stop > div:nth-child(3) {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -.4px;
+    font-weight: 400;
+
+    position: absolute;
+    top: 80%;
+    left: 46%;
+}
+
+.selected_airline_ticket4  {
+    margin-top: 10px;
+}
+
+.selected_airline_ticket5 {
+    margin-top: -15px;
+}
+
+
+.selected_airline_ticket5{
+    cursor: pointer;
+    width: 82px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.selected_airline_ticket5 .airline_ticket_select_btn {
+    width: 82px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #4585ff;
+    color: #4585ff;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+}
+.selected_airline_ticket5  > a {
+    text-decoration: none;
+}
+
+.selected_airline_ticket5  > a > div:nth-child(2) {
+    color: #ff4e4e;
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: -0.48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+ /* 항공권 */
+
+.airline_ticket_container {
+}
+
+.airline_ticket {
+    width: 900px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+
+    padding: 38px 40px 30px 65px;
+}
+.airline_ticket_inner {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* airline_ticket1 */
+.airline_ticket1 {
+    width: 180px;
+}
+
+.airline_ticket_airline {
+    font-weight: 600;
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 3px;
+    line-height: 1;
+    letter-spacing: -0.32px;
+    padding-left: 2px;
+    /* position: relative; */
+
+    display: flex;
+    margin-left: -30px;
+}
+
+
+.airline_ticket_airline > div:nth-child(1) > img {
+    width: 20px;
+    height: 14px;
+}
+
+.airline_ticket_airline > div:nth-child(2) {
+    margin-left: 10px;
+}
+/* .airline_ticket_airline > span::after {
+    content: "";
+    background-image: url("../img/main5_airline2/ailrine_logo1.png");
+    background-repeat: no-repeat;
+    background-size: 20px 14px;
+    width: 20px;
+    height: 14px;
+
+    position: absolute;
+    top: 12%;
+    left: -13%;
+} */
+
+
+.airline_ticket_flight_number {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: -0.48px;
+    line-height: 23px;
+    padding-left: 2px;
+}
+
+.airline_ticket_codeshare {
+    padding-top: 5px;
+    color: #4585ff;
+    font-size: 12px;
+    font-weight: 500;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+    position: relative;
+}
+
+.airline_ticket_codeshare_mark {
+    cursor: pointer;
+
+    width: 14px;
+    height: 14px;
+    content: '';
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/icon_help@3x.png) 50% / 100%;
+    display: inline-block;
+    
+    position: absolute;
+    top: 20%;
+    left: 23%;
+}
+
+.airline_ticket_codeshare_mark:hover + .airline_ticket_codeshare_hover {
+    display: block;
+}
+
+.airline_ticket_codeshare_hover {
+    display: none;
+    width: auto;
+    height: 40px;
+    padding: 10px 14px 10px 30px;
+    background-color: #fff;
+    border: 1px solid #999;
+    color: #111;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    z-index: 100;
+
+    position: absolute;
+    top: 160%;
+    left: 15%;
+}
+
+.airline_ticket_codeshare_hover::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    background-position: -67px -43px;
+    width: 11px;
+    height: 8px;
+    z-index: 100;
+
+    position: absolute;
+    top: -21%;
+    left: 10%;
+}
+
+.airline_ticket_codeshare_hover > span:nth-child(1)::after {
+    content: "";
+    background: url(https://image.hanatour.com/usr/static/svg/ico_flight_b_small.svg) no-repeat 0px 3px / 13px;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 22%;
+    left: 10%;
+}
+
+
+
+.airline_ticket_detail_schedule {
+    cursor: pointer;
+    width: 90px;
+    height: 28px;
+    float: left;
+    font-size: 13px;
+    color: #111;
+    border: 1px solid #c2c2c2;
+    min-width: 92px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 6px;
+
+    margin-top: 8px;
+    margin-left: -1px;
+    
+}
+
+.airline_ticket_detail_schedule_popup {
+    display: none;
+}
+
+body > .airline_ticket_detail_schedule_popup_active{
+    display: block;
+    width: 850px;
+    height: 443px;
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    box-shadow: 
+        0 2px 4px -1px rgba(0, 0, 0, 0.2), 
+        0 4px 5px rgba(0, 0, 0, 0.14), 
+        0 1px 10px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+}
+
+.airline_ticket_detail_schedule_popup_inner {
+    width: 770px;
+}
+
+.airline_ticket_detail_schedule_popup1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_ticket_detail_schedule_popup1 > div:nth-child(1) {
+    font-size: 22px;
+    color: #111;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+.airline_ticket_detail_schedule_popup1 > div:nth-child(2) {
+    cursor: pointer;
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    width: 26px;
+    height: 26px;
+    background-position: 0 0;
+}
+
+.airline_ticket_detail_schedule_popup2 {
+    display: flex;   
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.airline_ticket_detail_schedule_popup2_left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_ticket_detail_schedule_popup2_local {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_ticket_detail_schedule_popup2_local {
+    color: #111;
+    font-size: 17px;
+    vertical-align: middle;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_detail_schedule_popup2_local > div:nth-child(2) {
+    width: 14px;
+    height: 6px;
+    content: '';
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_air.png);
+    background-repeat: no-repeat;
+    background-position: -1px -43px;
+    margin: 0 8px;
+    margin-top: 5px;
+}
+
+
+
+.airline_ticket_detail_schedule_popup2_stop {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 13px;
+    color: #479de7;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.4px;
+    margin-top: 1px;
+    margin-left: 13px;
+}
+
+
+.airline_ticket_detail_schedule_popup2_right {
+    font-size: 15px;
+    color: #111;
+    margin-right: 10px;
+}
+
+.airline_ticket_detail_schedule_popup3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding-bottom: 26px;
+
+}
+.airline_ticket_detail_schedule_popup3 > div:nth-child(1) {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.airline_ticket_detail_schedule_popup3 > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_ticket_detail_schedule_popup3 > div:nth-child(2) > div {
+    margin-right: 9px;
+}
+.airline_ticket_detail_schedule_popup3 > div:nth-child(2) > div:nth-child(1) {
+    height: 24px;
+    line-height: 22px;
+    color: #4585ff;
+    font-size: 12px;
+    border: 1px solid #4585ff;
+    border-radius: 13px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.airline_ticket_detail_schedule_popup3 > div:nth-child(2) > div:nth-child(2) {
+    border: 1px solid #1ebfc7;
+    color: #1ebfc7;
+    height: 24px;
+    line-height: 22px;
+    font-size: 12px;
+    border-radius: 13px;
+    padding: 0 10px;
+}
+
+.airline_ticket_detail_schedule_popup4 {
+    padding-top: 30px;
+    border-top: 1px solid #111;
+    height: 158px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.airline_ticket_detail_schedule_popup4_date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 72px;
+    font-size: 13px;
+    color: #333;
+    padding-bottom: 4px;
+}
+
+.airline_ticket_detail_schedule_popup4_line {
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #1e9eed;
+    content: '';
+    margin-left: -4px;
+}
+
+
+.airline_ticket_detail_schedule_popup4_time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1px;
+    margin-right: 2px;
+}
+
+.airline_ticket_detail_schedule_popup4_time > div:nth-child(1),
+.airline_ticket_detail_schedule_popup4_time > div:nth-child(3) {
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+}
+
+.airline_ticket_detail_schedule_popup4_time > div:nth-child(2) {
+    color: #5e9acd;
+    font-size: 13px;
+    letter-spacing: -.4px;
+    margin-bottom: 25px;
+}
+
+
+.airline_ticket_detail_schedule_popup4_airport {
+    width: 525px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(2) {
+    margin-top: 12px;
+}
+
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(2) > span:nth-child(2) {
+    color: #5e2bb8;
+}   
+
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(3) {
+    margin-bottom: 12px;
+}
+
+
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(1) > span:nth-child(1),
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(4) > span:nth-child(1) {
+    font-size: 17px;
+    color: #111;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(1) > span:nth-child(2),
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(4) > span:nth-child(2) {
+    font-size: 13px;
+    color: #666;
+    font-weight: 400;
+    margin: 2px 0 0 5px;
+}
+
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(2) > span, 
+.airline_ticket_detail_schedule_popup4_airport > div:nth-child(3) > span {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_detail_schedule_popup5 {
+    color: #333;
+    padding-left: 23px;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    margin-top: 40px;
+
+    position: relative;
+}
+
+.airline_ticket_detail_schedule_popup5::before {
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
+    background-position: -19px -52px;
+    background-repeat: no-repeat;
+    
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+/* airline_ticket2 */
+.airline_ticket2 {
+    width: 260px;
+    display: flex;
+    text-align: center;
+
+    padding-top: 35px;
+    margin-left: -19px;
+
+    position: relative
+}
+
+
+.airline_ticket_time {
+    margin-right: 22px;
+}
+
+.airline_ticket_time > div:nth-child(1) {
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_time > div:nth-child(2) {
+    display: block;
+    font-size: 14px;
+    color: #111;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+
+
+.airline_ticket_stop {
+    margin-right: 27px;
+}
+
+
+.airline_ticket_stop_line {
+    width: 121px;
+    height: 10px;
+    content: '';
+    background: url(https://image.hanatour.com/usr/static/svg/air_arrow_long.svg) no-repeat 0 0;
+    
+    margin-top: 6.5px;
+}
+
+.airline_ticket_stop > div:nth-child(1) {
+    font-size: 12px;
+    color: #888;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.4px;
+
+    position: absolute;
+    top: 21%;
+    left: 40%;
+}
+
+.airline_ticket_stop > div:nth-child(3) {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -.4px;
+    font-weight: 400;
+
+    position: absolute;
+    top: 61%;
+    left: 46%;
+}
+
+
+
+/* airline_ticket3 */
+.airline_ticket3 {
+    width: 204px;
+    text-align: right;
+
+    padding-top: 26px;
+    padding-right: 2px;
+}
+
+.airline_ticket3 > div:nth-child(1) > span:nth-child(1) {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket3 > div:nth-child(1) > span:nth-child(2) {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.airline_ticket3 > div:nth-child(2) {
+    font-size: 12px;
+    color: #4585ff;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+
+/* airline_ticket4 */
+.airline_ticket4 {
+    cursor: pointer;
+    width: 82px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.airline_ticket_select_btn {
+    width: 82px;
+    height: 46px;
+    line-height: 46px;
+    background: #4585ff;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+}
+.airline_ticket4 > a {
+    text-decoration: none;
+}
+
+.airline_ticket4 > a > div:nth-child(2) {
+    color: #ff4e4e;
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: -0.48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+
+
+/* 항공권 선택 완료시 나오는 결과창 */
+
+
+
+.airline_ticket_select_result {
+    display: none;
+}
+
+.airline_search_page_body_right > .airline_ticket_select_active {
+    display: block;
+}
+
+
+
+
+
+.airline_ticket_select_result_info {
+    background-color: #f5f5f5;
+    padding: 30px 50px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.airline_ticket_select_result_info_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.airline_ticket_select_result_info_top > div:nth-child(1) {
+    color: #4585ff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_select_result_info_top > div:nth-child(2) > div:nth-child(1) {
+    text-align: right;
+    font-size: 13px;
+    color: #111;
+    letter-spacing: -0.52px;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.airline_ticket_select_result_info_top > div:nth-child(2) > div:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+    word-break: break-all;
+    line-height: 1;
+    letter-spacing: -.4px;
+}
+
+.airline_ticket_select_result_info_top > div:nth-child(2) > div:nth-child(2) > span:nth-child(3) {
+    display: inline-block;
+    border: none;
+    font-size: 0;
+    background: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png) no-repeat;
+    background-position: -477px -57px;
+    width: 20px;
+    height: 20px;
+
+}
+ 
+.airline_ticket_select_result_info_line {
+    background: #707070;
+    opacity: 0.1;
+    width: 100%;
+    height: 1px;
+    margin: 13px 0 0 0;
+}
+
+
+
+.airline_ticket_select_result_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+
+.airline_ticket_select_result_bottom > div:nth-child(1) > div:nth-child(1) {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+}
+
+.airline_ticket_select_result_bottom > div:nth-child(1) > div:nth-child(2) {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+}
+
+.airline_ticket_select_result_bottom > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) {
+    color: #5e2bb8;
+}
+
+.airline_ticket_select_result_bottom_btn {
+    cursor: pointer;
+    width: 96px;
+    height: 28px;
+    border: 1px solid #c2c2c2;
+    background: #fff;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    color: #111;
+    letter-spacing: -0.52px;
+}
+
+.airline_ticket_select_result_btn {
+    width: 900px;
+    height: 56px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.airline_ticket_select_result_btn > div {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    word-break: break-all;
+    line-height: 50px;
+    letter-spacing: -.4px;
+
+    width: 184px;
+    height: 56px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.airline_ticket_select_result_btn > div:nth-child(1),
+.airline_ticket_select_result_btn > div:nth-child(2) {
+    border: 1px solid #4585ff;
+    color: #4585ff;
+    background-color: white;
+}
+
+.airline_ticket_select_result_btn > div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.airline_ticket_select_result_btn > div:nth-child(3) {
+    color: white;
+    background-color: #4585ff;
+}
+
+

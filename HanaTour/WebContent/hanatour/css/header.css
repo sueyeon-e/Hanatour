@@ -1,0 +1,683 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+    
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+
+    line-height: 1;
+    letter-spacing: -.4px;
+
+    overflow-x: hidden;
+}
+.border {	
+    border: 1px solid red;		 
+}
+.center {
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+header{
+    padding-left: 17px; 
+}
+
+
+/* header1 */
+.header1_logout, .header1_login {
+    width: 1200px;
+    height: 48px;
+    margin: 0 auto;
+    /* background-color: lightgray; */
+    justify-content: flex-end;
+}
+
+
+.header1_logout {
+	display: flex;
+}
+
+.header1_login  {
+	display: none;	
+}
+
+
+
+header >  .header1_active {
+    display: flex;
+}
+
+header > .header1_hidden {
+    display: none;
+}
+
+
+
+
+
+.login, .logout {
+    width: 140px;
+    margin-top: 17px;
+    margin-right: 7px;
+    font-size: 12px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login div > a,
+.logout div > a {
+    color: black;
+    text-decoration: none;
+}
+.login div > a:hover,
+.logout div > a:hover {
+    color: rgb(94, 43, 184);
+}
+
+.login div:nth-child(2),
+.logout div:nth-child(2) {
+    margin-left: 15px;
+}
+
+.login div:nth-child(3),
+.logout div:nth-child(3) {
+    margin-left: 15px;
+}
+
+
+
+
+
+
+/* header2 */
+
+/* header2 왼쪽 */
+.header2 {
+    width: 1300px;
+    height: 48px;
+    margin: 0 auto;
+
+    /* background-color: lightgreen; */
+}
+
+.logo {
+    margin: 8px 0 0 42px;
+    cursor: pointer;
+}
+
+.search_bar {
+    width: 410px;
+    height: 44px;
+    margin: 1px 0 0 30px;
+    border: 2px solid black;
+    border-radius: 100px;
+
+    position: relative;
+    /* background-color: bisque; */
+}
+.search_bar > form > input[type='text'] {
+    width: 334px;
+    height: 30px;
+    margin: 6px 0 0 17px;
+    line-height: 40px;
+    border: none;
+    color: #333;
+    
+    position: absolute;
+    /* background-color: yellowgreen; */
+}
+.search_bar > form > input[type='text']:focus {
+   outline: none;
+}
+
+.search_bar > form > input[type='text']::placeholder {
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+    letter-spacing: -1.3px;
+    font-weight: 500;
+}
+
+.search_btn { 
+    top: 25%;
+    right: 4.3%;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;            
+
+    position: absolute;
+}
+
+.trending_search {
+    cursor: pointer;
+    margin: 13px 0 0 40px;
+
+    position: relative;
+}
+
+.trending_hover {
+    display: none;
+    width: 183px;
+    height: 320px;
+    border: 1px black solid;
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+
+    top: -70%;
+    left: -27%;
+    z-index: 100;
+}
+
+.trending_search:hover .trending_hover {
+    display: block;
+}
+
+.trending_hover > div:nth-child(1) { 
+    margin-top: 15px;
+    margin-left: 20px;
+    background-color: rgb(243, 243, 243);
+}
+.trending_hover > div:nth-child(2) {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+.trending_hover > div:nth-child(2) div{
+    margin-top: 10px;
+}
+/* header2 오른쪽 */
+.mypage {
+    width: 500px ;
+    margin-right: 51px;
+    margin-top: 2px;
+}
+.mypage div{
+    margin-left: 27px;
+}
+
+
+
+.mypage div > a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #333;
+    letter-spacing: -.5px;
+    font-weight: 400;
+}
+
+
+.mypage_item1 {
+    position: relative;
+}
+.mypage_item1 > a::before {
+    position: absolute;
+    content: "찜";
+    top: 110%;
+    left: 27%;
+}
+.mypage_item1 > a:hover {
+   color: rgb(94, 43, 184);
+}
+
+.mypage_item2 {
+    position: relative;
+}
+.mypage_item2 > a::before {
+    position: absolute;
+    content: "예약내역";
+    width: 40px;
+    top: 110%;
+    left: -51%;
+}
+.mypage_item2 > a:hover {
+    color: rgb(94, 43, 184);
+ }
+ 
+
+.mypage_item3 {
+    position: relative;
+}
+.mypage_item3 > a::before {
+    position: absolute;
+    content: "마이메뉴";
+    width: 40px;
+    top: 110%;
+    left: -34%;
+}
+.mypage_item3 > a:hover {
+    color: rgb(94, 43, 184);
+ }
+ 
+
+ .mypage_item3 {
+    margin-right: 15px;
+    position: relative;
+}
+
+
+
+
+/* mypage_item3_hover1 */
+.mypage_item3_hover1 {
+    display: none;
+
+    width: 211px;
+    z-index: 200;    
+    position: absolute;
+    top: 215%;
+    left: -560%;
+}
+
+
+.mypage_item3_hover1::after {
+    display: inline-block;
+    content: '';
+    background-position: left top;
+    width: 17px;
+    height: 8px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/ico-mymenu-arrow.png);
+    position: absolute;
+    top: -4%;
+    left: 53%;
+}
+
+.mypage_item3_hover1_header {
+    background-color: #f3f3f3;
+    padding: 0 20px 20px;
+    border: 1px solid #111;
+    border-bottom: none;
+    padding-top: 15px;
+    height: 69px;
+
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 19px;
+    letter-spacing: -.4px;
+}
+
+.mypage_item3_hover1_header > span {
+    color: rgb(94, 43, 184);
+}
+
+
+.mypage_item3_hover1_body {
+    background-color: #fff;
+    border: 1px solid #111;
+    border-top: none;
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+
+
+.mypage_item3_hover1_body > a > .mypage_item3_hover1_body_btn1 {
+    cursor: pointer;
+    width: 142px;
+    height: 32px;
+    border: 1px solid black;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
+
+    color: #666;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #c2c2c2;
+}
+
+
+.mypage_item3_hover1_body > a > .mypage_item3_hover1_body_btn2 { 
+    cursor: pointer;
+    width: 142px;
+    height: 32px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 30px;
+
+    border: solid 1px #5e2bb8;
+    color: #5e2bb8;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+/* mypage_item3_hover2 */
+
+.mypage_item3_hover2 {
+    display: none;
+
+    width: 211px;
+    z-index: 200;    
+    position: absolute;
+    top: 215%;
+    left: -560%;
+}
+
+
+.mypage_item3_hover2::after {
+    display: inline-block;
+    content: '';
+    background-position: left top;
+    width: 17px;
+    height: 8px;
+    background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/ico-mymenu-arrow.png);
+    position: absolute;
+    top: -4%;
+    left: 53%;
+}
+
+.mypage_item3_hover2_header {
+    background-color: #f3f3f3;
+    padding: 0 20px 20px;
+    border: 1px solid #111;
+    border-bottom: none;
+    padding-top: 15px;
+    height: 49px;
+
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    word-break: break-all;
+    line-height: 19px;
+    letter-spacing: -.4px;
+}
+
+.mypage_item3_hover2_header > span {
+    color: rgb(94, 43, 184);
+}
+
+
+.mypage_item3_hover2_body {
+    background-color: #fff;
+    border: 1px solid #111;
+    border-top: none;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+
+.mypage_item3_hover2_body > div {
+    margin-left: 20px;
+}
+
+.mypage_item3_hover2_body > div:not(div:nth-child(1)) {
+    margin-top: 11px;
+}
+
+.mypage_item3_hover2_body > div > a {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header3  */
+.header3 {
+    margin-top: 17px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid #111;
+
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.menu {
+    width: 1300px;
+    height: 56px;
+    margin: 0 auto;
+
+    /* background-color: aliceblue; */
+}
+
+.menu_left {
+    width: 138px;
+    margin-left: 42px;
+    height: 57px;
+
+    /* 원인 */
+    /* line-height: 55px; */
+    /* 원인 */
+    
+    padding-left: 28px;
+    
+    font-size: 15px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+
+.menu_left > a {
+    height: 55px;
+    display: inline-block;
+    margin-top: 23px;
+
+    color: black;    
+}
+
+.menu_left > a::after {
+    content: "전체메뉴";
+
+    position: absolute;
+    top: 21px;
+    left: 56.5px;
+}
+
+.ml_border_change {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: -1px;
+}
+
+.smc_hide {
+    display: none;
+}
+
+
+/* 서브메뉴 */
+.sub_menu_container {
+    /* display: none; */
+    border-top: 1px solid #111;;
+    width: 1920px;
+    height: 460px;
+    background-color: white;
+    border-bottom: solid 1px #979797;
+
+    z-index: 100;
+
+    position: absolute;
+    top: 98%;
+    left: -260%;
+}
+
+.sub_menu {
+    margin: 0 auto;
+    width: 1200px;
+    height: 461px;
+    z-index: 100;
+
+    margin-top: 20px;
+    margin-right: 368px;
+}
+
+.sub_menu a {
+    text-decoration: none;
+    color: #333;
+    letter-spacing: -.4px;
+}
+
+.sub_menu div div div:first-child {
+    width: 155px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #111;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sub_top > div:nth-child(5) > div:first-child, 
+.sub_bottom > div:nth-child(5) > div:first-child {
+    width: 310px;
+    border-bottom: 2px solid #111;
+}
+.sub_bottom > div:nth-child(1) > div:first-child {
+    border-bottom: none;
+}
+
+.sub_top > div:nth-child(6), 
+.sub_bottom > div:nth-child(6) {
+    margin-left: -155px;
+}
+
+
+.sub_menu div div div:not(:first-child),
+.sub_menu div div div:not(hr){
+    font-size: 13px;
+    line-height: 23px;
+    color: #333;
+    font-weight: 400;
+}
+
+.sub_top {
+    height: 40%;
+}
+
+.sub_item {
+    margin-right: 45px;
+}
+
+.sub_bottom {
+    margin-top: 8px;
+    height: 40%;
+    height: 30%;
+}
+
+.sub_menu_close {
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+
+    position: absolute;
+    top: 4.4%;
+    right: 10.4%;
+}
+
+
+
+
+
+.menu_center {
+    margin-top: 6px;
+    margin-left: -39.7px;
+}
+
+.menu_center > ul li {
+    float: left;
+    padding-left: 25px;
+}
+
+.menu_center > ul li > a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+}
+
+
+.menu_center > ul li > a:hover {
+    color: rgb(94, 43, 184);
+}
+
+.menu_center > ul li > div {
+    display: none;
+    width: inherit;
+    height: 2.5px;
+    background-color: rgb(94, 43, 184);
+    margin-top: 18px;
+}
+
+.menu_center > ul li > a:hover 
++ div:nth-child(2)   {
+    display: block;
+}
+
+
+
+
+
+
+.menu_right {
+    margin-right: 58.5px;
+}
+
+.menu_right > ul li {
+    float: right;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+.menu_right > ul li > a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #111;
+}
+.menu_right > ul li > a:hover{
+    color: rgb(94, 43, 184);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
